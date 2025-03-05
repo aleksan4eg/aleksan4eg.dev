@@ -25,7 +25,6 @@ export default function Home() {
                     latest industry trends.
                 </p>
             </main>
-            <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6"></footer>
         </div>
     );
 }
