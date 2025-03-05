@@ -20,7 +20,7 @@ export default function Home() {
                     currently living in Prague, Czech Republic. With a deep
                     understanding of both front-end and back-end technologies, I
                     excel in developing robust web applications that meet
-                    clients' needs. My passion for problem-solving and
+                    clients&apos; needs. My passion for problem-solving and
                     continuous learning allows me to stay updated with the
                     latest industry trends.
                 </p>
