@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Contrast, Moon, Sun } from "lucide-react";
+import { SunMoon, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,7 @@ function ThemeIcon({ theme }: { theme: string }) {
     if (theme === "dark") {
         return <Moon className="h-[1.2rem] w-[1.2rem]" />;
     } else if (theme === "system") {
-        return <Contrast className="h-[1.2rem] w-[1.2rem]" />;
+        return <SunMoon className="h-[1.2rem] w-[1.2rem]" />;
     }
     return <Sun className="h-[1.2rem] w-[1.2rem]" />;
 }
