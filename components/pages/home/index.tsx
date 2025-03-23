@@ -1,6 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import VerifiedCheckmark from "@/components/pages/home/verified";
@@ -9,6 +10,8 @@ import { DynamicGreeting } from "./hello-world";
 import { ChevronsLeftRight } from "lucide-react";
 
 const Intro = () => {
+    const t = useTranslations("HomePageIntro");
+
     return (
         <section>
             <div className="mb-5 flex flex-col items-center gap-5 md:flex-row-reverse">
@@ -28,23 +31,16 @@ const Intro = () => {
                             <DynamicGreeting />
                         </span>
                         <span className="flex items-center gap-2">
-                            I am
+                            {t("me")}
                             <span className="text-blue-600 drop-shadow-xs dark:shadow-transparent">
-                                Aleksandr Gumroian
+                                {t("name")}
                             </span>
                             <VerifiedCheckmark />
                         </span>
                     </h1>
                     <div>
-                        <p className="mb-2">
-                            Creative and enthusiastic Frontend Software Engineer
-                            based in Czechia 🇨🇿
-                        </p>
-                        <p className="mb-2">
-                            Driven by precision, I aim to build visually
-                            appealing and user-friendly applications while
-                            continuously improving my skills.
-                        </p>
+                        <p className="mb-2">{t("about")}</p>
+                        <p className="mb-2">{t("description")}</p>
                     </div>
                 </div>
             </div>
