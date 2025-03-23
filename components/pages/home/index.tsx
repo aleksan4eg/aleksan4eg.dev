@@ -11,10 +11,10 @@ import { ChevronsLeftRight } from "lucide-react";
 const Intro = () => {
     return (
         <section>
-            <div className="mb-5 flex flex-col gap-5 md:flex-row-reverse">
+            <div className="mb-5 flex flex-col items-center gap-5 md:flex-row-reverse">
                 <Image
                     src="/me.png"
-                    alt="Aleksandr Gumroian"
+                    alt="Logo of aleksan4eg.dev"
                     width={180}
                     height={180}
                     className="w-40 self-center rounded-full md:w-45 md:self-start"
@@ -48,7 +48,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex h-9 flex-col items-center gap-5 sm:flex-row">
+            <div className="flex flex-col items-center gap-5 sm:flex-row">
                 <Link
                     href="/"
                     className={`${buttonVariants({ variant: "default" })} w-full sm:w-auto`}
@@ -56,7 +56,11 @@ const Intro = () => {
                     About me
                     <ChevronsLeftRight />
                 </Link>
-                <Separator orientation="vertical" className="hidden sm:block" />
+                <Separator
+                    orientation="vertical"
+                    className="hidden sm:block"
+                    style={{ height: "30px" }}
+                />
                 <SocialLinks />
             </div>
         </section>
