@@ -55,6 +55,7 @@ try {
                     }}
                 />
                 <meta name="darkreader-lock" />
+                <meta name="apple-mobile-web-app-title" content="Aleksan4eg" />
             </head>
             <body
                 className={`flex h-screen flex-col ${inter.variable} font-sans`}
