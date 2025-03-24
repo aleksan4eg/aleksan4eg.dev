@@ -21,6 +21,7 @@ const Intro = () => {
                     width={180}
                     height={180}
                     className="w-40 self-center rounded-full md:w-45 md:self-start"
+                    priority
                 />
                 <div>
                     <h1 className="mb-5 text-xl font-bold sm:text-2xl">

@@ -10,8 +10,10 @@ const Footer = () => {
                     <Image
                         src="/ag-logo.svg"
                         alt="AG Logo"
-                        width={28}
-                        height={15}
+                        className="h-6 w-6"
+                        width={95}
+                        height={53}
+                        priority
                     />
                     <p className="font-bold">Aleksandr Gumroian</p>
                 </div>
