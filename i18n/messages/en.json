@@ -4,5 +4,10 @@
         "name": "Aleksandr Gumroian",
         "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
         "description": "Driven by precision, I aim to build visually appealing and user-friendly applications while continuously improving my skills."
+    },
+    "LanguageSwitcher": {
+        "locale": "{locale, select, ru {Russian} en {English} cs {Czech} other {Unknown}}",
+        "label": "Language",
+        "aria-label": "Change language"
     }
 }

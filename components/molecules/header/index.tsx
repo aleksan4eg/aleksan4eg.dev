@@ -1,6 +1,7 @@
 import MainNavigation from "@/components/molecules/header/navigation";
 import { ThemeSelector } from "@/components/ui/theme-selector";
 import Logo from "@/components/molecules/header/logo";
+import LanguageSwitcher from "@/components/language-switcher";
 
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
                 <Logo />
                 <div className="hidden items-center justify-end space-x-2 sm:flex">
                     <MainNavigation />
+                    <LanguageSwitcher />
                     <ThemeSelector />
                 </div>
             </nav>
