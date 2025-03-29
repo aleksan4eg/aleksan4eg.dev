@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, JSX } from "react";
 import { SunMoon, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import {
     DropdownMenu,
     DropdownMenuContent,
+    DropdownMenuCheckboxItem,
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
@@ -16,12 +17,12 @@ import {
 import { LoadingSpinner } from "./spinner";
 
 function ThemeIcon({ theme }: { theme: string }) {
-    if (theme === "dark") {
-        return <Moon className="h-[1.2rem] w-[1.2rem]" />;
-    } else if (theme === "system") {
-        return <SunMoon className="h-[1.2rem] w-[1.2rem]" />;
-    }
-    return <Sun className="h-[1.2rem] w-[1.2rem]" />;
+    const icons: Record<string, JSX.Element> = {
+        dark: <Moon className="h-[1.2rem] w-[1.2rem]" />,
+        system: <SunMoon className="h-[1.2rem] w-[1.2rem]" />,
+        light: <Sun className="h-[1.2rem] w-[1.2rem]" />,
+    };
+    return icons[theme] || icons.light;
 }
 
 export function ThemeSelector() {
@@ -48,9 +49,24 @@ export function ThemeSelector() {
             <DropdownMenuContent align="end">
                 <DropdownMenuLabel>{t("label")}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
+                <DropdownMenuCheckboxItem
+                    checked={theme === "light"}
+                    onClick={() => setTheme("light")}
+                >
                     {t("light")}
+                </DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem
+                    checked={theme === "dark"}
+                    onClick={() => setTheme("dark")}
+                >
                     {t("dark")}
+                </DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem
+                    checked={theme === "system"}
+                    onClick={() => setTheme("system")}
+                >
                     {t("system")}
+                </DropdownMenuCheckboxItem>
             </DropdownMenuContent>
         </DropdownMenu>
     );
