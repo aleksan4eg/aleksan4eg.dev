@@ -26,7 +26,7 @@
             "about": "About",
             "blog": "Blog",
             "projects": "Projects",
-            "uses": "Uses",
+            "uses": "What I use",
             "contact": "Contact"
         }
     },
@@ -41,7 +41,7 @@
             "blog": "Blog",
             "projects": "Projects",
             "contact": "Contact",
-            "uses": "Uses"
+            "uses": "What I use"
         },
         "other": {
             "title": "Other",
