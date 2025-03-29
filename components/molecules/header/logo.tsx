@@ -9,11 +9,12 @@ const Logo = () => {
             className={`transform transition-transform duration-200 hover:scale-110 ${buttonVariants({ variant: "ghost" })}`}
         >
             <Image
-                className="cursor-pointer"
+                className="h-10 w-10 cursor-pointer"
                 src="/ag-logo.svg"
                 alt="AG Logo"
-                width={43.1}
-                height={24}
+                width={95}
+                height={53}
+                priority
             />
         </Link>
     );

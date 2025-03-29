@@ -1,6 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
 import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import VerifiedCheckmark from "@/components/pages/home/verified";
@@ -9,42 +10,38 @@ import { DynamicGreeting } from "./hello-world";
 import { ChevronsLeftRight } from "lucide-react";
 
 const Intro = () => {
+    const t = useTranslations("HomePage.Intro");
+
     return (
         <section>
             <div className="mb-5 flex flex-col items-center gap-5 md:flex-row-reverse">
                 <Image
                     src="/me.png"
-                    alt="Logo of aleksan4eg.dev"
+                    alt={t("altImage")}
                     width={180}
                     height={180}
-                    className="w-40 self-center rounded-full md:w-45 md:self-start"
+                    className="w-40 self-center rounded-full inset-shadow-[0_0_50px_rgba(0,0,0,0.9)] md:w-45 md:self-start dark:inset-shadow-[0_0_50px_rgba(0,0,0,0.9)]"
+                    priority
                 />
                 <div>
                     <h1 className="mb-5 text-xl font-bold sm:text-2xl">
                         <span className="mb-2 block">
-                            <span className="text-primary-txt animate-waving motion-safe:animate-wave motion-safe:origin-waving me-3 inline-block drop-shadow-xs">
+                            <span className="text-primary-txt animate-waving motion-safe:animate-wave motion-safe:origin-waving me-3 inline-flex items-center drop-shadow-xs">
                                 👋🏻
                             </span>
                             <DynamicGreeting />
                         </span>
                         <span className="flex items-center gap-2">
-                            I am
+                            {t("me")}
                             <span className="text-blue-600 drop-shadow-xs dark:shadow-transparent">
-                                Aleksandr Gumroian
+                                {t("name")}
                             </span>
                             <VerifiedCheckmark />
                         </span>
                     </h1>
                     <div>
-                        <p className="mb-2">
-                            Creative and enthusiastic Frontend Software Engineer
-                            based in Czechia 🇨🇿
-                        </p>
-                        <p className="mb-2">
-                            Driven by precision, I aim to build visually
-                            appealing and user-friendly applications while
-                            continuously improving my skills.
-                        </p>
+                        <p className="mb-2">{t("about")}</p>
+                        <p className="mb-2">{t("description")}</p>
                     </div>
                 </div>
             </div>
@@ -52,8 +49,9 @@ const Intro = () => {
                 <Link
                     href="/"
                     className={`${buttonVariants({ variant: "default" })} w-full sm:w-auto`}
+                    aria-label={t("ctaAriaLabel")}
                 >
-                    About me
+                    {t("cta")}
                     <ChevronsLeftRight />
                 </Link>
                 <Separator

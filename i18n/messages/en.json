@@ -1,0 +1,67 @@
+{
+    "HomePage": {
+        "Intro": {
+            "me": "I am",
+            "name": "Aleksandr Gumroian",
+            "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
+            "description": "Driven by precision, I aim to build visually appealing and user-friendly applications while continuously improving my skills.",
+            "cta": "About me",
+            "ctaAriaLabel": "Learn more about Aleksandr Gumroian",
+            "altImage": "Aleksandr Gumroian on a baseball field, holding a baseball bat and ball in his hands, smiling but looking away. In the background, green grass and a stadium."
+        },
+        "FeaturedPosts": {
+            "title": "Featured posts",
+            "all": "View all",
+            "noPosts": "No posts found."
+        },
+        "FeaturedProjects": {
+            "title": "Featured projects",
+            "all": "View all",
+            "noProjects": "No projects found."
+        }
+    },
+    "Header": {
+        "navigation": {
+            "home": "Home",
+            "about": "About",
+            "blog": "Blog",
+            "projects": "Projects",
+            "uses": "Uses",
+            "contact": "Contact"
+        }
+    },
+    "Footer": {
+        "name": "Aleksandr Gumroian",
+        "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
+        "rights": "CC BY-SA 4.0.",
+        "navigation": {
+            "title": "Navigation",
+            "home": "Home",
+            "about": "About",
+            "blog": "Blog",
+            "projects": "Projects",
+            "contact": "Contact",
+            "uses": "Uses"
+        },
+        "other": {
+            "title": "Other",
+            "github": "GitHub",
+            "contact": "Contact",
+            "rss": "RSS feed",
+            "sitemap": "Sitemap",
+            "scrollToTop": "Scroll to top"
+        }
+    },
+    "LanguageSwitcher": {
+        "locale": "{locale, select, ru {Russian} en {English} cs {Czech} other {Unknown}}",
+        "label": "Language",
+        "ariaLabel": "Change language"
+    },
+    "ThemeSelector": {
+        "label": "Theme",
+        "ariaLabel": "Change theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    }
+}
