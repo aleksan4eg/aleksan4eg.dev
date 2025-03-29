@@ -45,11 +45,7 @@ export default function LanguageSwitcher() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button
-                    variant="ghost"
-                    size="icon"
-                    aria-label={t("aria-label")}
-                >
+                <Button variant="ghost" size="icon" aria-label={t("ariaLabel")}>
                     <span>{getCountryFlagEmoji(locale)}</span>
                     <span className="sr-only">{t("label")}</span>
                 </Button>
@@ -63,10 +59,10 @@ export default function LanguageSwitcher() {
                         checked={currentLocale === locale}
                         onClick={() => handleLocaleChange(currentLocale)}
                     >
-                        <span className="mr-0.5">
+                        {t("locale", { locale: currentLocale })}
+                        <span className="ml-auto">
                             {getCountryFlagEmoji(currentLocale)}
                         </span>
-                        {t("locale", { locale: currentLocale })}
                     </DropdownMenuCheckboxItem>
                 ))}
             </DropdownMenuContent>

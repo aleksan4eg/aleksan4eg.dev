@@ -1,46 +1,41 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
-import {
-    Tooltip,
-    TooltipTrigger,
-    TooltipContent,
-} from "@/components/ui/tooltip";
+import { useTranslations } from "next-intl";
 
-const NAVLINKS = [
-    { href: "/about", label: "About", active: false },
-    { href: "/blog", label: "Blog", active: false },
-    { href: "/projects", label: "Projects", active: false },
-    { href: "/uses", label: "Uses", active: false },
-    { href: "/contact", label: "Contact", active: false },
-];
+const MainNavigation = () => {
+    const t = useTranslations("Header.navigation");
 
-const MainNavigation = () =>
-    NAVLINKS.map((url) => (
-        <Tooltip key={url.href}>
-            <TooltipTrigger asChild>
-                {url.active ? (
-                    <Link
-                        href={url.href}
-                        className={buttonVariants({ variant: "ghost" })}
-                    >
-                        {url.label}
-                    </Link>
-                ) : (
-                    <span
-                        className={`${buttonVariants({
-                            variant: "ghost",
-                        })} cursor-not-allowed opacity-50`}
-                    >
-                        {url.label}
-                    </span>
-                )}
-            </TooltipTrigger>
-            <TooltipContent>
-                <p>Coming soon</p>
-            </TooltipContent>
-        </Tooltip>
+    const NAVLINKS = [
+        { href: "/about", label: t("about"), active: false },
+        { href: "/blog", label: t("blog"), active: false },
+        { href: "/projects", label: t("projects"), active: false },
+        { href: "/uses", label: t("uses"), active: false },
+        { href: "/contact", label: t("contact"), active: false },
+    ];
+
+    return NAVLINKS.map((url) => (
+        <Fragment key={url.href}>
+            {url.active ? (
+                <Link
+                    href={url.href}
+                    className={buttonVariants({ variant: "ghost" })}
+                >
+                    {url.label}
+                </Link>
+            ) : (
+                <span
+                    className={`${buttonVariants({
+                        variant: "ghost",
+                    })} cursor-not-allowed opacity-50`}
+                >
+                    {url.label}
+                </span>
+            )}
+        </Fragment>
     ));
+};
 
 export default MainNavigation;

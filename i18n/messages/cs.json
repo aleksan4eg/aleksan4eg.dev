@@ -1,13 +1,67 @@
 {
-    "HomePageIntro": {
-        "me": "Ja jsem",
+    "HomePage": {
+        "Intro": {
+            "me": "Ja jsem",
+            "name": "Aleksandr Gumroian",
+            "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
+            "description": "Dbám na přesnost a usiluji o tvorbu vizuálně atraktivních a uživatelsky přívětivých aplikací, přičemž neustále zdokonaluji své dovednosti.",
+            "cta": "O mně",
+            "ctaAriaLabel": "Zjistit více o Aleksandru Gumrojanovi",
+            "altImage": "Aleksandr Gumroian na baseballovém hřišti, drží baseballovou pálku a míč v rukou, usmívá se, ale dívá se stranou. Na pozadí je zelená tráva a stadion."
+        },
+        "FeaturedPosts": {
+            "title": "Poslední příspěvky",
+            "all": "Zobrazit vše",
+            "noPosts": "Nebyly nalezeny žádné příspěvky."
+        },
+        "FeaturedProjects": {
+            "title": "Vybrané projekty",
+            "all": "Zobrazit vše",
+            "noProjects": "Nebyly nalezeny žádné projekty."
+        }
+    },
+    "Header": {
+        "navigation": {
+            "home": "Domů",
+            "about": "O mně",
+            "blog": "Blog",
+            "projects": "Projekty",
+            "uses": "Co používám",
+            "contact": "Kontakt"
+        }
+    },
+    "Footer": {
         "name": "Aleksandr Gumroian",
         "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
-        "description": "Dbám na přesnost a usiluji o tvorbu vizuálně atraktivních a uživatelsky přívětivých aplikací, přičemž neustále zdokonaluji své dovednosti."
+        "rights": "CC BY-SA 4.0.",
+        "navigation": {
+            "title": "Navigace",
+            "home": "Domů",
+            "about": "O mně",
+            "blog": "Blog",
+            "projects": "Projekty",
+            "contact": "Kontakt",
+            "uses": "Co používám"
+        },
+        "other": {
+            "title": "Ostatní",
+            "github": "GitHub",
+            "contact": "Kontakt",
+            "rss": "RSS kanál",
+            "sitemap": "Mapa stránek",
+            "scrollToTop": "Nahoru"
+        }
     },
     "LanguageSwitcher": {
         "locale": "{locale, select, ru {Ruština} en {Angličtina} cs {Čeština} other {Neznámé}}",
         "label": "Jazyk",
-        "aria-label": "Změnit jazyk"
+        "ariaLabel": "Změnit jazyk"
+    },
+    "ThemeSelector": {
+        "label": "Téma",
+        "ariaLabel": "Změnit téma",
+        "light": "Světlé",
+        "dark": "Tmavé",
+        "system": "Systémové"
     }
 }

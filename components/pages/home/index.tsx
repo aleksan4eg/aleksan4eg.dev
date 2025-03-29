@@ -10,14 +10,14 @@ import { DynamicGreeting } from "./hello-world";
 import { ChevronsLeftRight } from "lucide-react";
 
 const Intro = () => {
-    const t = useTranslations("HomePageIntro");
+    const t = useTranslations("HomePage.Intro");
 
     return (
         <section>
             <div className="mb-5 flex flex-col items-center gap-5 md:flex-row-reverse">
                 <Image
                     src="/me.png"
-                    alt="Logo of aleksan4eg.dev"
+                    alt={t("altImage")}
                     width={180}
                     height={180}
                     className="w-40 self-center rounded-full md:w-45 md:self-start"
@@ -49,8 +49,9 @@ const Intro = () => {
                 <Link
                     href="/"
                     className={`${buttonVariants({ variant: "default" })} w-full sm:w-auto`}
+                    aria-label={t("ctaAriaLabel")}
                 >
-                    About me
+                    {t("cta")}
                     <ChevronsLeftRight />
                 </Link>
                 <Separator
