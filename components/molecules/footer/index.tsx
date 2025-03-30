@@ -1,10 +1,13 @@
-import SocialLinks from "@/components/molecules/social-links";
+import Image from "next/image";
+import Link from "next/link";
 import { ChevronsUp, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+
+import SocialLinks from "@/components/molecules/social-links";
 
 const Footer = () => {
     const t = useTranslations("Footer");
+
     return (
         <footer className="border-t-divider mobile-lg:pt-7 tablet-sm:pt-8 tablet-sm:pb-12 tablet-sm:grid-rows-[1fr_auto] tablet-sm:gap-y-4 tablet-md:px-0 mx-auto grid w-full max-w-[800px] grid-cols-2 gap-6 border-t px-3 pt-6 pb-6 sm:grid-cols-4">
             <div className="col-span-2 flex flex-col gap-2">
@@ -26,9 +29,7 @@ const Footer = () => {
                 <h3 className="font-bold uppercase">{t("navigation.title")}</h3>
                 <ul className="flex flex-col gap-2 text-sm">
                     <li>
-                        <span className="cursor-not-allowed opacity-50">
-                            {t("navigation.home")}
-                        </span>
+                        <Link href="/">{t("navigation.home")}</Link>
                     </li>
                     <li>
                         <span className="cursor-not-allowed opacity-50">
