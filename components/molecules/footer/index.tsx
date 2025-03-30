@@ -1,68 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ChevronsUp, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
+
 import SocialLinks from "@/components/molecules/social-links";
-
-const NAVIGATION_LINKS = [
-    { key: "home", href: "/", disabled: false },
-    { key: "about", href: "#", disabled: true },
-    { key: "blog", href: "#", disabled: true },
-    { key: "projects", href: "#", disabled: true },
-    { key: "uses", href: "#", disabled: true },
-];
-
-const OTHER_LINKS = [
-    {
-        key: "github",
-        href: "https://github.com/aleksan4eg/aleksan4eg.dev",
-        external: true,
-        icon: <Star className="inline" size={14} />,
-    },
-    { key: "contact", external: true, href: "mailto:a.gumroian@gmail.com" },
-    { key: "rss", href: "#", external: true, disabled: true },
-    { key: "sitemap", href: "#", external: false, disabled: true },
-    {
-        key: "scrollToTop",
-        href: "#",
-        external: false,
-        disabled: true,
-        icon: <ChevronsUp className="inline" size={18} />,
-    },
-];
-
-interface FooterLinkProps {
-    href: string;
-    children: React.ReactNode;
-    disabled?: boolean;
-    external?: boolean;
-    icon?: React.ReactNode;
-}
-
-const FooterLink = ({
-    href,
-    children,
-    disabled,
-    external,
-    icon,
-}: FooterLinkProps) => {
-    if (disabled) {
-        return (
-            <span className="flex cursor-not-allowed items-center gap-1 opacity-50">
-                {children} {icon}
-            </span>
-        );
-    }
-    return (
-        <Link
-            href={href}
-            target={external ? "_blank" : undefined}
-            className="flex items-center gap-1"
-        >
-            {children} {icon}
-        </Link>
-    );
-};
+import FooterLink from "@/components/molecules/footer/FooterLink";
+import {
+    NAVIGATION_LINKS,
+    OTHER_LINKS,
+} from "@/components/molecules/footer/constants";
 
 const Footer = () => {
     const t = useTranslations("Footer");
@@ -85,7 +29,6 @@ const Footer = () => {
                 <p className="mb-2 text-sm">{t("about")}</p>
                 <SocialLinks />
             </div>
-
             {/* Navigation Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
                 <h3 className="font-bold uppercase">{t("navigation.title")}</h3>
@@ -99,7 +42,6 @@ const Footer = () => {
                     ))}
                 </ul>
             </div>
-
             {/* Other Links Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
                 <h3 className="font-bold uppercase">{t("other.title")}</h3>
@@ -120,7 +62,6 @@ const Footer = () => {
                     )}
                 </ul>
             </div>
-
             {/* Copyright Section */}
             <div className="col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm text-gray-500">
                 <p>
