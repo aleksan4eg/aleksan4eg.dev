@@ -6,14 +6,14 @@ import { buttonVariants } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 const MainNavigation = () => {
-    const t = useTranslations("Header.navigation");
+    const t = useTranslations("common");
 
     const NAVLINKS = [
-        { href: "/about", label: t("about"), active: false },
-        { href: "/blog", label: t("blog"), active: false },
-        { href: "/projects", label: t("projects"), active: false },
-        { href: "/uses", label: t("uses"), active: false },
-        { href: "/contact", label: t("contact"), active: false },
+        { href: "/about", label: t("navigation.about"), active: false },
+        { href: "/blog", label: t("navigation.blog"), active: false },
+        { href: "/projects", label: t("navigation.projects"), active: false },
+        { href: "/uses", label: t("navigation.uses"), active: false },
+        { href: "/contact", label: t("navigation.contact"), active: false },
     ];
 
     return NAVLINKS.map((url) => (

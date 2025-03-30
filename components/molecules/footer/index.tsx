@@ -10,6 +10,7 @@ import {
 
 const Footer = () => {
     const t = useTranslations("Footer");
+    const tCommon = useTranslations("common");
 
     return (
         <footer className="border-t-divider mobile-lg:pt-7 tablet-sm:pt-8 tablet-sm:pb-12 tablet-sm:grid-rows-[1fr_auto] tablet-sm:gap-y-4 tablet-md:px-0 mx-auto grid w-full max-w-[800px] grid-cols-2 gap-6 border-t px-3 pt-6 pb-6 sm:grid-cols-4">
@@ -18,7 +19,7 @@ const Footer = () => {
                 <div className="flex items-center gap-2">
                     <Image
                         src="/ag-logo.svg"
-                        alt={t("altLogo")}
+                        alt={tCommon("altLogo")}
                         className="h-6 w-6"
                         width={95}
                         height={53}
@@ -31,12 +32,14 @@ const Footer = () => {
             </div>
             {/* Navigation Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
-                <h3 className="font-bold uppercase">{t("navigation.title")}</h3>
+                <h3 className="font-bold uppercase">
+                    {tCommon("navigation.title")}
+                </h3>
                 <ul className="flex flex-col gap-2 text-sm">
                     {NAVIGATION_LINKS.map(({ key, href, disabled }) => (
                         <li key={key}>
                             <FooterLink href={href} disabled={disabled}>
-                                {t(`navigation.${key}`)}
+                                {tCommon(`navigation.${key}`)}
                             </FooterLink>
                         </li>
                     ))}

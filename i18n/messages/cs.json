@@ -1,4 +1,16 @@
 {
+    "common": {
+        "altLogo": "Logo aleksan4eg.dev",
+        "navigation": {
+            "title": "Navigace",
+            "home": "Domů",
+            "about": "O mně",
+            "blog": "Blog",
+            "projects": "Projekty",
+            "contact": "Kontakt",
+            "uses": "Co používám"
+        }
+    },
     "HomePage": {
         "Intro": {
             "me": "Ja jsem",
@@ -20,30 +32,10 @@
             "noProjects": "Nebyly nalezeny žádné projekty."
         }
     },
-    "Header": {
-        "navigation": {
-            "home": "Domů",
-            "about": "O mně",
-            "blog": "Blog",
-            "projects": "Projekty",
-            "uses": "Co používám",
-            "contact": "Kontakt"
-        }
-    },
     "Footer": {
         "name": "Aleksandr Gumroian",
         "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
         "rights": "CC BY-SA 4.0.",
-        "altLogo": "Logo aleksan4eg.dev",
-        "navigation": {
-            "title": "Navigace",
-            "home": "Domů",
-            "about": "O mně",
-            "blog": "Blog",
-            "projects": "Projekty",
-            "contact": "Kontakt",
-            "uses": "Co používám"
-        },
         "other": {
             "title": "Ostatní",
             "github": "GitHub",
