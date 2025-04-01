@@ -55,9 +55,14 @@ try {
             `,
                     }}
                 />
-                <link rel="icon" href="/favicon.ico" sizes="any" />
-                <meta name="darkreader-lock" />
+                <link
+                    rel="icon"
+                    type="image/x-icon"
+                    href="/favicon.ico"
+                    sizes="any"
+                />
                 <meta name="apple-mobile-web-app-title" content="Aleksan4eg" />
+                <meta name="darkreader-lock" />
             </head>
             <body
                 className={`flex h-screen flex-col ${inter.variable} font-sans`}
