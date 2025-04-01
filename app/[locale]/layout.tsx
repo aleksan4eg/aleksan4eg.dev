@@ -55,12 +55,6 @@ try {
             `,
                     }}
                 />
-                <link
-                    rel="icon"
-                    type="image/x-icon"
-                    href="/favicon.ico"
-                    sizes="any"
-                />
                 <meta name="apple-mobile-web-app-title" content="Aleksan4eg" />
                 <meta name="darkreader-lock" />
             </head>
