@@ -19,7 +19,7 @@ const FeaturedPosts = () => {
                 </Button>
             </h2>
             <div className="grid grid-cols-1 gap-6">
-                <p className="text-center text-sm text-gray-600">
+                <p className="text-center text-sm text-gray-600 dark:text-gray-400">
                     {t("noPosts")}
                 </p>
             </div>

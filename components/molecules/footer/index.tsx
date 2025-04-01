@@ -66,7 +66,7 @@ const Footer = () => {
                 </ul>
             </div>
             {/* Copyright Section */}
-            <div className="col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm text-gray-500">
+            <div className="col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm text-gray-500 dark:text-gray-400">
                 <p>
                     © {new Date().getFullYear()} {t("name")}. {t("rights")}
                 </p>
