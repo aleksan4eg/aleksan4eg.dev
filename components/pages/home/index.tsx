@@ -49,7 +49,6 @@ const Intro = () => {
                 <Link
                     href="/"
                     className={`${buttonVariants({ variant: "default" })} w-full sm:w-auto`}
-                    aria-label={t("ctaAriaLabel")}
                 >
                     {t("cta")}
                     <ChevronsLeftRight />
