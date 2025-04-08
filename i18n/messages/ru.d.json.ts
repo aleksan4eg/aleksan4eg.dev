@@ -49,7 +49,7 @@ declare const messages: {
         }
     },
     "LanguageSwitcher": {
-        "locale": "{locale, select, ru {Русский} en {Инглиш} cs {Чешский} other {Неизвестный}}",
+        "locale": "{locale, select, ru {Русский} en {Английский} cs {Чешский} other {Неизвестный}}",
         "label": "Язык",
         "ariaLabel": "Сменить язык"
     },
