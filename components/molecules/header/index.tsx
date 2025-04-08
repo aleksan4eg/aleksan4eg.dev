@@ -5,7 +5,7 @@ import LanguageSwitcher from "@/components/language-switcher";
 
 const Header = () => {
     return (
-        <header className="bg-opacity-10 fixed top-0 z-50 w-full px-3 py-3 backdrop-blur backdrop-filter">
+        <header className="bg-opacity-10 fixed top-0 z-50 w-full px-3 py-3 backdrop-blur-md">
             <nav className="mx-auto flex max-w-[800px] items-center justify-between">
                 <Logo />
                 <div className="hidden items-center justify-end space-x-2 sm:flex">
