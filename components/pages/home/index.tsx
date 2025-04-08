@@ -24,21 +24,21 @@ const Intro = () => {
                     priority
                 />
                 <div>
-                    <h1 className="mb-5 text-xl font-bold sm:text-2xl">
+                    <div className="mb-5 text-xl font-bold sm:text-2xl">
                         <span className="mb-2 block">
                             <span className="text-primary-txt animate-waving motion-safe:animate-wave motion-safe:origin-waving me-3 inline-flex items-center drop-shadow-xs">
                                 👋🏻
                             </span>
                             <DynamicGreeting />
                         </span>
-                        <span className="flex items-center gap-2">
+                        <h1 className="flex items-center gap-2">
                             {t("me")}
                             <span className="text-blue-600 drop-shadow-xs dark:shadow-transparent">
                                 {t("name")}
                             </span>
                             <VerifiedCheckmark />
-                        </span>
-                    </h1>
+                        </h1>
+                    </div>
                     <div>
                         <p className="mb-2">{t("about")}</p>
                         <p className="mb-2">{t("description")}</p>
