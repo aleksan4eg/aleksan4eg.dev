@@ -18,11 +18,6 @@ export const metadata: Metadata = {
         "A. Gumroian is a frontend software engineer with a focus on web development, user interfaces, and user experience design.",
 };
 
-export const META_THEME_COLORS = {
-    light: "#ffffff",
-    dark: "#09090b",
-};
-
 const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
@@ -35,7 +30,6 @@ export default async function RootLayout({
     children: React.ReactNode;
     params: Promise<{ locale: string }>;
 }) {
-    // Ensure that the incoming `locale` is valid
     const { locale } = await params;
     if (!hasLocale(routing.locales, locale)) {
         notFound();
@@ -44,17 +38,6 @@ export default async function RootLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-try {
-    if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
-    }
-} catch (_) {}
-            `,
-                    }}
-                />
                 <meta name="apple-mobile-web-app-title" content="Aleksan4eg" />
                 <meta name="darkreader-lock" />
             </head>
