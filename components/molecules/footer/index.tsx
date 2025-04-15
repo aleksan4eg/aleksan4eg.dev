@@ -13,7 +13,10 @@ const Footer = () => {
     const tCommon = useTranslations("common");
 
     return (
-        <footer className="border-t-divider mobile-lg:pt-7 tablet-sm:pt-8 tablet-sm:pb-12 tablet-sm:grid-rows-[1fr_auto] tablet-sm:gap-y-4 tablet-md:px-0 mx-auto grid w-full max-w-[800px] grid-cols-2 gap-6 border-t px-3 pt-6 pb-6 sm:grid-cols-4">
+        <footer
+            className="border-t-divider mobile-lg:pt-7 tablet-sm:pt-8 tablet-sm:pb-12 tablet-sm:grid-rows-[1fr_auto] tablet-sm:gap-y-4 tablet-md:px-0 mx-auto grid w-full max-w-[800px] grid-cols-2 gap-6 border-t px-3 pt-6 pb-6 sm:grid-cols-4"
+            role="contentinfo"
+        >
             {/* Logo and About Section */}
             <div className="col-span-2 flex flex-col gap-2">
                 <div className="flex items-center gap-2">
