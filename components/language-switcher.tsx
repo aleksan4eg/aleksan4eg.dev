@@ -43,7 +43,7 @@ export default function LanguageSwitcher() {
     }
 
     return (
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label={t("ariaLabel")}>
                     <span>{getCountryFlagEmoji(locale)}</span>

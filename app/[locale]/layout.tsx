@@ -13,13 +13,13 @@ import Wrapper from "@/components/molecules/wrapper";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-    title: "Aleksandr Gumroian | Software Engineer",
+    title: "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
     description:
-        "A. Gumroian is a frontend software engineer with a focus on web development, user interfaces, and user experience design.",
+        "A. Gumroian is a software engineer with a focus on web development, user interfaces, and user experience design.",
 };
 
 const inter = Inter({
-    subsets: ["latin"],
+    subsets: ["latin", "cyrillic"],
     variable: "--font-inter",
 });
 

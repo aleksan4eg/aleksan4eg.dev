@@ -1,8 +1,14 @@
+/**
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ * Licensed under the GNU GPLv3: https://www.gnu.org/licenses/gpl-3.0.html
+ * Source: https://github.com/aleksan4eg/aleksan4eg.dev
+ */
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
-import { buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import VerifiedCheckmark from "@/components/pages/home/verified";
 import SocialLinks from "@/components/molecules/social-links";
@@ -13,7 +19,7 @@ const Intro = () => {
     const t = useTranslations("HomePage.Intro");
 
     return (
-        <section>
+        <section className="mb-12">
             <div className="mb-5 flex flex-col items-center gap-5 md:flex-row-reverse">
                 <Image
                     src="/me.png"
@@ -33,7 +39,7 @@ const Intro = () => {
                         </span>
                         <h1 className="flex items-center gap-2">
                             {t("me")}
-                            <span className="text-blue-600 drop-shadow-xs dark:shadow-transparent">
+                            <span className="text-primary drop-shadow-xs dark:shadow-transparent">
                                 {t("name")}
                             </span>
                             <VerifiedCheckmark />
@@ -46,13 +52,12 @@ const Intro = () => {
                 </div>
             </div>
             <div className="flex flex-col items-center gap-5 sm:flex-row">
-                <Link
-                    href="/"
-                    className={`${buttonVariants({ variant: "default" })} w-full sm:w-auto`}
-                >
-                    {t("cta")}
-                    <ChevronsLeftRight />
-                </Link>
+                <Button asChild className="w-full shadow-sm sm:w-auto">
+                    <Link href="/about">
+                        {t("cta")}
+                        <ChevronsLeftRight />
+                    </Link>
+                </Button>
                 <Separator
                     orientation="vertical"
                     className="hidden sm:block"

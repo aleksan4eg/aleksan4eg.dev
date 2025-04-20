@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 const FeaturedPosts = () => {
     const t = useTranslations("HomePage.FeaturedPosts");
     return (
-        <section className="flex flex-col gap-6">
+        <section className="mb-12 flex flex-col gap-6">
             <h2 className="flex items-center justify-between text-xl font-bold">
                 {t("title")}
                 <Button

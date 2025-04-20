@@ -35,7 +35,7 @@ export function ThemeSelector() {
     }, []);
 
     return (
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label={t("ariaLabel")}>
                     {isClient ? (

@@ -26,7 +26,7 @@ const FooterLink = ({
         <Link
             href={href}
             target={external ? "_blank" : undefined}
-            className="flex items-center gap-1"
+            className="decoration-foreground/30 hover:text-primary hover:decoration-primary focus:decoration-primary focus:text-primary inline-flex items-center gap-1 underline decoration-2 underline-offset-3 transition-colors duration-200 focus:outline-offset-3"
         >
             {children} {icon}
         </Link>
