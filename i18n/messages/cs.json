@@ -71,10 +71,10 @@
         "ariaLabel": "Změnit jazyk"
     },
     "ThemeSelector": {
-        "label": "Téma",
-        "ariaLabel": "Změnit téma",
-        "light": "Světlé",
-        "dark": "Tmavé",
-        "system": "Systémové"
+        "label": "Motiv vzhledu",
+        "ariaLabel": "Změnit motiv vzhledu",
+        "light": "Světlý",
+        "dark": "Tmavý",
+        "system": "Systémový"
     }
 }
