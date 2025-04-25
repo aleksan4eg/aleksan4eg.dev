@@ -163,3 +163,7 @@
         @apply cursor-pointer;
     }
 }
+
+body {
+    @apply text-base;
+}
