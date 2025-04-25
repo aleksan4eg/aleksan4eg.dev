@@ -1,3 +1,10 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import { ChevronsUp, ExternalLink } from "lucide-react";
 
 const NAVIGATION_LINKS = [
@@ -19,9 +26,22 @@ const OTHER_LINKS = [
         key: "contact",
         external: false,
         href: `mailto:${"a.gumroian"}@${"gmail.com"}`,
+        icon: null,
     },
-    { key: "rss", href: "#", external: true, disabled: true },
-    { key: "sitemap", href: "#", external: false, disabled: true },
+    {
+        key: "rss",
+        href: "#",
+        external: true,
+        disabled: true,
+        icon: <ExternalLink size={13} />,
+    },
+    {
+        key: "sitemap",
+        href: "#",
+        external: false,
+        disabled: true,
+        icon: null,
+    },
     {
         key: "scrollToTop",
         href: "#",

@@ -1,7 +1,14 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
+import LanguageSwitcher from "@/components/language-switcher";
+import Logo from "@/components/molecules/header/logo";
 import MainNavigation from "@/components/molecules/header/navigation";
 import { ThemeSelector } from "@/components/ui/theme-selector";
-import Logo from "@/components/molecules/header/logo";
-import LanguageSwitcher from "@/components/language-switcher";
 
 const Header = () => {
     return (

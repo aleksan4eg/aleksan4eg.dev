@@ -1,5 +1,12 @@
-import { getRequestConfig } from "next-intl/server";
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import { hasLocale } from "next-intl";
+import { getRequestConfig } from "next-intl/server";
 
 import { routing } from "./routing";
 

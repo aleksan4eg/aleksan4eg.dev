@@ -4,16 +4,17 @@
  * Source: https://github.com/aleksan4eg/aleksan4eg.dev
  */
 
+import { ChevronsLeftRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation";
+import SocialLinks from "@/components/molecules/social-links";
+import VerifiedCheckmark from "@/components/pages/home/verified";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import VerifiedCheckmark from "@/components/pages/home/verified";
-import SocialLinks from "@/components/molecules/social-links";
+import { Link } from "@/i18n/navigation";
+
 import { DynamicGreeting } from "./hello-world";
-import { ChevronsLeftRight } from "lucide-react";
 
 const Intro = () => {
     const t = useTranslations("HomePage.Intro");

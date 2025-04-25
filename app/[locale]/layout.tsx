@@ -1,14 +1,21 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 
-import Header from "@/components/molecules/header";
 import Footer from "@/components/molecules/footer";
+import Header from "@/components/molecules/header";
+import Wrapper from "@/components/molecules/wrapper";
 import ThemeProvider from "@/components/providers/theme-provider";
 import TooltipProvider from "@/components/providers/tooltip-provider";
-import Wrapper from "@/components/molecules/wrapper";
+import { routing } from "@/i18n/routing";
 
 import "@/styles/globals.css";
 

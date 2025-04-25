@@ -1,8 +1,15 @@
-import Link from "next/link";
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { buttonVariants } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation";
 
 const Logo = () => {
     const t = useTranslations("common");

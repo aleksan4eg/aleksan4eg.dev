@@ -1,12 +1,19 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import SocialLinks from "@/components/molecules/social-links";
-import FooterLink from "@/components/molecules/footer/FooterLink";
 import {
     NAVIGATION_LINKS,
     OTHER_LINKS,
 } from "@/components/molecules/footer/constants";
+import FooterLink from "@/components/molecules/footer/FooterLink";
+import SocialLinks from "@/components/molecules/social-links";
 
 const Footer = () => {
     const t = useTranslations("Footer");

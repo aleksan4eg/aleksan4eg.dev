@@ -1,7 +1,14 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 "use client";
 
-import * as React from "react";
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
+import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
