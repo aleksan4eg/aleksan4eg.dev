@@ -23,8 +23,8 @@ export const routing = defineRouting({
             cs: "/projekty",
         },
         "/uses": {
-            ru: "/chto-ispolzuyu",
-            cs: "/co-pouzivam",
+            ru: "/instrumenty",
+            cs: "/nastroje",
         },
     },
 });
