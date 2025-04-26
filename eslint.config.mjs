@@ -66,6 +66,9 @@ const eslintConfig = [
                     "newlines-between": "always",
                 },
             ],
+            // Avoid hardcoded labels
+            "react/jsx-no-literals": "error",
+            // Avoid using next/link, use next/navigation instead
             "no-restricted-imports": [
                 "error",
                 {
