@@ -1,9 +1,16 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 "use client";
 
-import { useState, useEffect, JSX } from "react";
 import { SunMoon, Moon, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
+import { useState, useEffect, JSX } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -14,6 +21,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+
 import { LoadingSpinner } from "./spinner";
 
 function ThemeIcon({ theme }: { theme: string }) {
@@ -35,7 +43,7 @@ export function ThemeSelector() {
     }, []);
 
     return (
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label={t("ariaLabel")}>
                     {isClient ? (

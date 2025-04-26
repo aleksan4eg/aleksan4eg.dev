@@ -1,12 +1,19 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import { ChevronsRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
 
 const FeaturedPosts = () => {
     const t = useTranslations("HomePage.FeaturedPosts");
     return (
-        <section className="flex flex-col gap-6">
+        <section className="mb-12 flex flex-col gap-6">
             <h2 className="flex items-center justify-between text-xl font-bold">
                 {t("title")}
                 <Button

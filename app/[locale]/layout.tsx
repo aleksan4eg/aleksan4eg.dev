@@ -1,25 +1,32 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 
-import Header from "@/components/molecules/header";
 import Footer from "@/components/molecules/footer";
+import Header from "@/components/molecules/header";
+import Wrapper from "@/components/molecules/wrapper";
 import ThemeProvider from "@/components/providers/theme-provider";
 import TooltipProvider from "@/components/providers/tooltip-provider";
-import Wrapper from "@/components/molecules/wrapper";
+import { routing } from "@/i18n/routing";
 
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-    title: "Aleksandr Gumroian | Software Engineer",
+    title: "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
     description:
-        "A. Gumroian is a frontend software engineer with a focus on web development, user interfaces, and user experience design.",
+        "A. Gumroian is a software engineer with a focus on web development, user interfaces, and user experience design.",
 };
 
 const inter = Inter({
-    subsets: ["latin"],
+    subsets: ["latin", "cyrillic"],
     variable: "--font-inter",
 });
 

@@ -7,12 +7,13 @@
             "about": "About",
             "blog": "Blog",
             "projects": "Projects",
-            "uses": "What I use",
+            "uses": "Uses",
             "contact": "Contact"
         }
     },
     "HomePage": {
         "Intro": {
+            "greeting": "👋🏻",
             "me": "I am",
             "name": "Aleksandr Gumroian",
             "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
@@ -32,10 +33,43 @@
             "noProjects": "No projects found."
         }
     },
+    "AboutPage": {
+        "title": "About me",
+        "first": "Hi, I’m Aleksandr Gumroian — a software engineer with a passion for building user-friendly, accessible, and performant web applications.",
+        "second": "My main focus is frontend development, particularly with React.\n                I have a strong foundation in JavaScript, TypeScript, and CSS,\n                and I’m always eager to learn new technologies and frameworks.\n                Outside of work, I contribute to open-source projects, share\n                thoughts through my ",
+        "secondLink": "blog",
+        "secondExtra": ", and\n                experiment with ideas that spark my curiosity.",
+        "imageAlt": "Aleksandr Gumroian standing in sunglasses, the background is out of focus with a cityscape, a river and bridges.",
+        "imageCaption": "View on Prague from Metronome (Stalin), Czechia - Aug. '21",
+        "third": "When I’m not coding, you’ll likely find me outdoors — fishing, playing volleyball or ping-pong, walking my dog, or just exploring new places and spending time with friends.",
+        "fourth": "If you'd like to connect, collaborate, or just say hello, feel free to ",
+        "fourthLink": "reach out",
+        "fourthExtra": " or find me and connect on ",
+        "github": "GitHub",
+        "fourthExtra2": " and ",
+        "linkedin": "LinkedIn",
+        "fourthExtra3": ". I’m always open to new opportunities and cooperations, so don’t hesitate to contact me if you think we could work together!",
+        "fifth": "Curious about the tools and setup I use? Check out my ",
+        "fifthLink": "uses",
+        "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen."
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projects"
+    },
+    "UsesPage": {
+        "title": "Uses"
+    },
+    "ContactPage": {
+        "title": "Contact"
+    },
     "Footer": {
         "name": "Aleksandr Gumroian",
+        "copy": "© ",
         "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
-        "rights": "CC BY-SA 4.0.",
+        "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Other",
             "github": "GitHub",

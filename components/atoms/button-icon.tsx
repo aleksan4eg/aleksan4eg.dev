@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 type ButtonIconProps = {
     iconPath: string;
@@ -15,7 +14,7 @@ const ButtonIcon = ({
 }: ButtonIconProps) => {
     return (
         <Button variant="outline" size="icon" asChild>
-            <Link
+            <a
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -29,7 +28,7 @@ const ButtonIcon = ({
                 >
                     <path className={"fill-current"} d={iconPath} />
                 </svg>
-            </Link>
+            </a>
         </Button>
     );
 };

@@ -4,7 +4,7 @@ import {
     mastodon,
     xTwitter,
     telegram,
-} from "@/components/constants/icons";
+} from "@/components/atoms/icons";
 import SocialLink from "@/components/molecules/social-links/social-link";
 
 export interface SocialLink {

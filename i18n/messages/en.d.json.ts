@@ -10,7 +10,7 @@ declare const messages: {
             "about": "About",
             "blog": "Blog",
             "projects": "Projects",
-            "uses": "What I use",
+            "uses": "Uses",
             "contact": "Contact"
         }
     },

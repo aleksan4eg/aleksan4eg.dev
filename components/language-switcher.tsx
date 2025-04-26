@@ -1,10 +1,15 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 "use client";
 
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations, Locale } from "next-intl";
 
-import { routing } from "@/i18n/routing";
-import { usePathname, useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import {
     DropdownMenu,
@@ -14,6 +19,8 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 
 export default function LanguageSwitcher() {
     const t = useTranslations("LanguageSwitcher");
@@ -43,7 +50,7 @@ export default function LanguageSwitcher() {
     }
 
     return (
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label={t("ariaLabel")}>
                     <span>{getCountryFlagEmoji(locale)}</span>

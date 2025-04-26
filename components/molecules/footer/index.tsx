@@ -1,16 +1,26 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import SocialLinks from "@/components/molecules/social-links";
-import FooterLink from "@/components/molecules/footer/FooterLink";
 import {
     NAVIGATION_LINKS,
     OTHER_LINKS,
 } from "@/components/molecules/footer/constants";
+import SocialLinks from "@/components/molecules/social-links";
+import { Link } from "@/i18n/navigation";
 
 const Footer = () => {
     const t = useTranslations("Footer");
     const tCommon = useTranslations("common");
+
+    const linkStyle =
+        "decoration-foreground/30 hover:text-primary hover:decoration-primary focus:decoration-primary focus:text-primary inline-flex items-center gap-1 underline decoration-2 underline-offset-3 transition-colors duration-200 focus:outline-offset-3";
 
     return (
         <footer
@@ -35,34 +45,54 @@ const Footer = () => {
             </div>
             {/* Navigation Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
-                <h3 className="font-bold uppercase">
+                <p className="font-bold uppercase">
                     {tCommon("navigation.title")}
-                </h3>
+                </p>
                 <ul className="flex flex-col gap-2 text-sm">
                     {NAVIGATION_LINKS.map(({ key, href, disabled }) => (
                         <li key={key}>
-                            <FooterLink href={href} disabled={disabled}>
+                            <Link
+                                href={href}
+                                className={
+                                    disabled
+                                        ? "flex cursor-not-allowed items-center gap-1 opacity-50"
+                                        : linkStyle
+                                }
+                            >
                                 {tCommon(`navigation.${key}`)}
-                            </FooterLink>
+                            </Link>
                         </li>
                     ))}
                 </ul>
             </div>
             {/* Other Links Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
-                <h3 className="font-bold uppercase">{t("other.title")}</h3>
+                <p className="font-bold uppercase">{t("other.title")}</p>
                 <ul className="flex flex-col gap-2 text-sm">
                     {OTHER_LINKS.map(
                         ({ key, href, external, disabled, icon }) => (
                             <li key={key}>
-                                <FooterLink
+                                <a
                                     href={href}
-                                    external={external}
-                                    disabled={disabled}
-                                    icon={icon}
+                                    target={external ? "_blank" : undefined}
+                                    rel={
+                                        external
+                                            ? "noopener noreferrer"
+                                            : undefined
+                                    }
+                                    className={
+                                        disabled
+                                            ? "flex cursor-not-allowed items-center gap-1 opacity-50"
+                                            : linkStyle
+                                    }
                                 >
                                     {t(`other.${key}`)}
-                                </FooterLink>
+                                    {icon && (
+                                        <span className="inline-flex items-center">
+                                            {icon}
+                                        </span>
+                                    )}
+                                </a>
                             </li>
                         ),
                     )}
@@ -71,7 +101,9 @@ const Footer = () => {
             {/* Copyright Section */}
             <div className="col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm text-gray-500 dark:text-gray-400">
                 <p>
-                    © {new Date().getFullYear()} {t("name")}. {t("rights")}
+                    {t("copy")}
+                    {new Date().getFullYear()} {t("name")}
+                    {t("rights")}
                 </p>
             </div>
         </footer>
