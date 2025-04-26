@@ -12,12 +12,15 @@ import {
     NAVIGATION_LINKS,
     OTHER_LINKS,
 } from "@/components/molecules/footer/constants";
-import FooterLink from "@/components/molecules/footer/FooterLink";
 import SocialLinks from "@/components/molecules/social-links";
+import { Link } from "@/i18n/navigation";
 
 const Footer = () => {
     const t = useTranslations("Footer");
     const tCommon = useTranslations("common");
+
+    const linkStyle =
+        "decoration-foreground/30 hover:text-primary hover:decoration-primary focus:decoration-primary focus:text-primary inline-flex items-center gap-1 underline decoration-2 underline-offset-3 transition-colors duration-200 focus:outline-offset-3";
 
     return (
         <footer
@@ -48,9 +51,16 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 text-sm">
                     {NAVIGATION_LINKS.map(({ key, href, disabled }) => (
                         <li key={key}>
-                            <FooterLink href={href} disabled={disabled}>
+                            <Link
+                                href={href}
+                                className={
+                                    disabled
+                                        ? "flex cursor-not-allowed items-center gap-1 opacity-50"
+                                        : linkStyle
+                                }
+                            >
                                 {tCommon(`navigation.${key}`)}
-                            </FooterLink>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -62,14 +72,27 @@ const Footer = () => {
                     {OTHER_LINKS.map(
                         ({ key, href, external, disabled, icon }) => (
                             <li key={key}>
-                                <FooterLink
+                                <a
                                     href={href}
-                                    external={external}
-                                    disabled={disabled}
-                                    icon={icon}
+                                    target={external ? "_blank" : undefined}
+                                    rel={
+                                        external
+                                            ? "noopener noreferrer"
+                                            : undefined
+                                    }
+                                    className={
+                                        disabled
+                                            ? "flex cursor-not-allowed items-center gap-1 opacity-50"
+                                            : linkStyle
+                                    }
                                 >
                                     {t(`other.${key}`)}
-                                </FooterLink>
+                                    {icon && (
+                                        <span className="inline-flex items-center">
+                                            {icon}
+                                        </span>
+                                    )}
+                                </a>
                             </li>
                         ),
                     )}

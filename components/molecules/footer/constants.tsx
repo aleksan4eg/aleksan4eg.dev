@@ -7,15 +7,31 @@
 
 import { ChevronsUp, ExternalLink } from "lucide-react";
 
-const NAVIGATION_LINKS = [
+type AllowedRoute = "/" | "/about" | "/blog" | "/projects" | "/uses";
+
+interface NavigationLink {
+    key: string;
+    href: AllowedRoute;
+    disabled: boolean;
+}
+
+interface OtherLink {
+    key: string;
+    href: string;
+    external: boolean;
+    disabled?: boolean;
+    icon: React.ReactNode | null;
+}
+
+const NAVIGATION_LINKS: NavigationLink[] = [
     { key: "home", href: "/", disabled: false },
     { key: "about", href: "/about", disabled: false },
-    { key: "blog", href: "#", disabled: true },
-    { key: "projects", href: "#", disabled: true },
-    { key: "uses", href: "#", disabled: true },
+    { key: "blog", href: "/blog", disabled: true },
+    { key: "projects", href: "/projects", disabled: true },
+    { key: "uses", href: "/uses", disabled: true },
 ];
 
-const OTHER_LINKS = [
+const OTHER_LINKS: OtherLink[] = [
     {
         key: "github",
         href: "https://github.com/aleksan4eg/aleksan4eg.dev",
