@@ -52,6 +52,18 @@
         "fifthLink": "uses",
         "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen."
     },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projects"
+    },
+    "UsesPage": {
+        "title": "Uses"
+    },
+    "ContactPage": {
+        "title": "Contact"
+    },
     "Footer": {
         "name": "Aleksandr Gumroian",
         "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",

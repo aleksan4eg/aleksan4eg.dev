@@ -7,8 +7,8 @@
             "about": "O mně",
             "blog": "Blog",
             "projects": "Projekty",
-            "contact": "Kontakt",
-            "uses": "Co používám"
+            "uses": "Nástroje",
+            "contact": "Kontakt"
         }
     },
     "HomePage": {
@@ -51,6 +51,18 @@
         "fifth": "Zajímá vás, jaké nástroje a technologie používám? Podívejte se na moji stránku ",
         "fifthLink": "Nástroje",
         "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!"
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projekty"
+    },
+    "UsesPage": {
+        "title": "Nástroje"
+    },
+    "ContactPage": {
+        "title": "Kontakt"
     },
     "Footer": {
         "name": "Aleksandr Gumroian",
