@@ -13,6 +13,7 @@
     },
     "HomePage": {
         "Intro": {
+            "greeting": "👋🏻",
             "me": "I am",
             "name": "Aleksandr Gumroian",
             "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
@@ -66,8 +67,9 @@
     },
     "Footer": {
         "name": "Aleksandr Gumroian",
+        "copy": "© ",
         "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
-        "rights": "CC BY-SA 4.0.",
+        "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Other",
             "github": "GitHub",

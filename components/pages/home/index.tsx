@@ -34,7 +34,7 @@ const Intro = () => {
                     <div className="mb-5 text-xl font-bold sm:text-2xl">
                         <span className="mb-2 block">
                             <span className="text-primary-txt animate-waving motion-safe:animate-wave motion-safe:origin-waving me-3 inline-flex items-center drop-shadow-xs">
-                                👋🏻
+                                {t("greeting")}
                             </span>
                             <DynamicGreeting />
                         </span>
