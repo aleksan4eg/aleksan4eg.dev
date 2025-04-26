@@ -42,9 +42,9 @@ const Footer = () => {
             </div>
             {/* Navigation Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
-                <h3 className="font-bold uppercase">
+                <p className="font-bold uppercase">
                     {tCommon("navigation.title")}
-                </h3>
+                </p>
                 <ul className="flex flex-col gap-2 text-sm">
                     {NAVIGATION_LINKS.map(({ key, href, disabled }) => (
                         <li key={key}>
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
             {/* Other Links Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">
-                <h3 className="font-bold uppercase">{t("other.title")}</h3>
+                <p className="font-bold uppercase">{t("other.title")}</p>
                 <ul className="flex flex-col gap-2 text-sm">
                     {OTHER_LINKS.map(
                         ({ key, href, external, disabled, icon }) => (
