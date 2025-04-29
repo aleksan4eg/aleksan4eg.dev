@@ -38,9 +38,9 @@ const Footer = () => {
                         height={53}
                         priority
                     />
-                    <p className="font-bold">{t("name")}</p>
+                    <p className="font-bold">{tCommon("name")}</p>
                 </div>
-                <p className="mb-2 text-sm">{t("about")}</p>
+                <p className="mb-2 text-sm">{tCommon("about")}</p>
                 <SocialLinks />
             </div>
             {/* Navigation Section */}
@@ -99,10 +99,10 @@ const Footer = () => {
                 </ul>
             </div>
             {/* Copyright Section */}
-            <div className="col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm text-gray-500 dark:text-gray-400">
+            <div className="text-foreground/50 dark:text-foreground/50 col-span-2 flex min-h-6 flex-row items-center justify-start self-start text-sm">
                 <p>
                     {t("copy")}
-                    {new Date().getFullYear()} {t("name")}
+                    {new Date().getFullYear()} {tCommon("name")}
                     {t("rights")}
                 </p>
             </div>

@@ -1,6 +1,8 @@
 {
     "common": {
         "altLogo": "Logo of aleksan4eg.dev",
+        "name": "Aleksandr Gumroian",
+        "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
         "navigation": {
             "title": "Navigation",
             "home": "Home",
@@ -15,8 +17,6 @@
         "Intro": {
             "greeting": "👋🏻",
             "me": "I am",
-            "name": "Aleksandr Gumroian",
-            "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
             "description": "Driven by precision, I aim to build visually appealing and user-friendly applications while continuously improving my skills.",
             "cta": "About me",
             "ctaAriaLabel": "Learn more about Aleksandr Gumroian",
@@ -66,9 +66,7 @@
         "title": "Contact"
     },
     "Footer": {
-        "name": "Aleksandr Gumroian",
         "copy": "© ",
-        "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
         "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Other",

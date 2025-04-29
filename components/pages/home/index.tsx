@@ -18,6 +18,7 @@ import { DynamicGreeting } from "./hello-world";
 
 const Intro = () => {
     const t = useTranslations("HomePage.Intro");
+    const tCommon = useTranslations("common");
 
     return (
         <section className="mb-12">
@@ -30,7 +31,7 @@ const Intro = () => {
                     className="w-40 self-center rounded-full inset-shadow-[0_0_50px_rgba(0,0,0,0.9)] md:w-45 md:self-start dark:inset-shadow-[0_0_50px_rgba(0,0,0,0.9)]"
                     priority
                 />
-                <div>
+                <div className="text-center sm:text-left">
                     <div className="mb-5 text-xl font-bold sm:text-2xl">
                         <span className="mb-2 block">
                             <span className="text-primary-txt animate-waving motion-safe:animate-wave motion-safe:origin-waving me-3 inline-flex items-center drop-shadow-xs">
@@ -38,16 +39,16 @@ const Intro = () => {
                             </span>
                             <DynamicGreeting />
                         </span>
-                        <h1 className="flex items-center gap-2">
+                        <h1 className="inline-flex items-center gap-2">
                             {t("me")}
                             <span className="text-primary drop-shadow-xs dark:shadow-transparent">
-                                {t("name")}
+                                {tCommon("name")}
                             </span>
                             <VerifiedCheckmark />
                         </h1>
                     </div>
                     <div>
-                        <p className="mb-2">{t("about")}</p>
+                        <p className="mb-2">{tCommon("about")}</p>
                         <p className="mb-2">{t("description")}</p>
                     </div>
                 </div>
