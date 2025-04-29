@@ -1,11 +1,20 @@
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
 import {
     github,
     linkedin,
     mastodon,
     xTwitter,
     telegram,
+    email,
 } from "@/components/atoms/icons";
 import SocialLink from "@/components/molecules/social-links/social-link";
+import { cn } from "@/lib/utils";
 
 export interface SocialLink {
     icon: string;
@@ -39,6 +48,12 @@ const SOCIAL_LINKS = [
         ariaLabel: "Aleksandr Gumroian's Mastodon",
     },
     {
+        id: "email",
+        href: "mailto:a.gumroian@gmail.com",
+        icon: email,
+        ariaLabel: "Aleksandr Gumroian's Email",
+    },
+    {
         id: "telegram",
         href: "https://t.me/aleksan4eg",
         icon: telegram,
@@ -46,9 +61,9 @@ const SOCIAL_LINKS = [
     },
 ];
 
-const SocialLinks = () => {
+const SocialLinks = ({ className }: { className?: string }) => {
     return (
-        <div className="flex space-x-4">
+        <div className={cn("flex gap-4", className)}>
             {SOCIAL_LINKS.map(({ id, icon, href, ariaLabel }) => (
                 <SocialLink
                     key={id}
