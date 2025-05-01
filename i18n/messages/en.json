@@ -51,7 +51,10 @@
         "fourthExtra3": ". I’m always open to new opportunities and cooperations, so don’t hesitate to contact me if you think we could work together!",
         "fifth": "Curious about the tools and setup I use? Check out my ",
         "fifthLink": "uses",
-        "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen."
+        "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen.",
+        "Skills": {
+            "title": "Skills"
+        }
     },
     "BlogPage": {
         "title": "Blog"

@@ -12,7 +12,7 @@ import NavLink from "@/components/molecules/header/nav-link";
 
 const MainNavigation = ({ links }: { links: NavLinkType[] }) => {
     return (
-        <nav role="navigation" className="hidden sm:flex">
+        <nav role="navigation" className="hidden gap-2 sm:flex">
             {links.slice(1).map((link) => (
                 <NavLink key={String(link.href)} navLink={link} />
             ))}

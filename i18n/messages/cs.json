@@ -51,7 +51,10 @@
         "fourthExtra3": " — jsem otevřený novým příležitostem a projektům.",
         "fifth": "Zajímá vás, jaké nástroje a technologie používám? Podívejte se na moji stránku ",
         "fifthLink": "Nástroje",
-        "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!"
+        "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!",
+        "Skills": {
+            "title": "Dovednosti"
+        }
     },
     "BlogPage": {
         "title": "Blog"
