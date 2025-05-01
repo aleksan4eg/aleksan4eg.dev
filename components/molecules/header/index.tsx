@@ -64,7 +64,7 @@ const Header = () => {
         >
             <div className="mx-auto flex max-w-[800px] items-center justify-between">
                 <Logo />
-                <div className="flex items-center justify-end space-x-2">
+                <div className="flex items-center justify-end gap-2">
                     <MainNavigation links={NAVLINKS} />
                     <LanguageSwitcher />
                     <ThemeSelector />
