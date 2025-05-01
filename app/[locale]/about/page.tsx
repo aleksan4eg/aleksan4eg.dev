@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 import Link from "@/components/atoms/link";
 import ExternalLink from "@/components/atoms/link-external";
+import Skills from "@/components/pages/about/skills";
 
 const AboutPage = () => {
     const t = useTranslations("AboutPage");
@@ -48,11 +49,12 @@ const AboutPage = () => {
                 </ExternalLink>
                 {t("fourthExtra3")}
             </p>
-            <p>
+            <p className="mb-10">
                 {t("fifth")}
                 <Link href="/uses">{t("fifthLink")}</Link>
                 {t("fifthExtra")}
             </p>
+            <Skills />
         </>
     );
 };
