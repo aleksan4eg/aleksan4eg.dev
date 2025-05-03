@@ -15,15 +15,15 @@ import { skills } from "./data";
 const Skills = () => {
     const t = useTranslations("AboutPage");
     return (
-        <div className="skills" id="skills">
-            <h2 className="mb-4 text-xl font-bold">{t("Skills.title")}</h2>
+        <section className="mb-10" id="skills">
+            <h2 className="mb-5 text-xl font-bold">{t("Skills.title")}</h2>
             <ul className="flex flex-wrap items-center gap-2.5">
                 {skills
                     .filter((skill) => !skill.hidden)
                     .map((skill) => (
                         <li className="block" key={skill.name}>
                             <span
-                                className="flex h-9 cursor-default items-center gap-1.5 rounded-md border border-gray-300 px-2.5 py-2 text-sm transition-colors duration-300 ease-in-out hover:border-(--tint) hover:bg-(--tint)/40 dark:border-gray-700 dark:bg-gray-800/10 dark:text-gray-200 dark:hover:border-(--tint) dark:hover:bg-(--tint)/40"
+                                className="border-input flex h-9 cursor-default items-center gap-1.5 rounded-md border px-2.5 py-2 text-sm shadow-2xs transition-colors duration-300 ease-out hover:border-(--tint) hover:bg-(--tint)/50 dark:bg-gray-800/10 dark:text-gray-200 dark:hover:border-(--tint) dark:hover:bg-(--tint)/60"
                                 style={
                                     {
                                         "--tint": skill.color + "80",
@@ -36,7 +36,7 @@ const Skills = () => {
                         </li>
                     ))}
             </ul>
-        </div>
+        </section>
     );
 };
 

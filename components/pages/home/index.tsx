@@ -1,7 +1,8 @@
-/**
+/*
  * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
- * Licensed under the GNU GPLv3: https://www.gnu.org/licenses/gpl-3.0.html
- * Source: https://github.com/aleksan4eg/aleksan4eg.dev
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
  */
 
 import { ChevronsLeftRight } from "lucide-react";
