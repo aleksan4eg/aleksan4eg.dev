@@ -54,6 +54,15 @@
         "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!",
         "Skills": {
             "title": "Dovednosti"
+        },
+        "Experience": {
+            "title": "Zkušenosti",
+            "position1": "Editor webového obsahu",
+            "date1": "Říjen 2018 – Květen 2020",
+            "description1": "Spravoval a upravoval obsah, zajišťoval přesnost a konzistenci pro velké klienty jako Microsoft a Ford.",
+            "position2": "Programator pro výzkum a vývoj",
+            "date2": "Červen 2020 – Současnost",
+            "description2": "Pracuji na několika projektech, především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
         }
     },
     "BlogPage": {
