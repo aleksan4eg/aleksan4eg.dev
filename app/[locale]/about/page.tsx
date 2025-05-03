@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 
 import Link from "@/components/atoms/link";
 import ExternalLink from "@/components/atoms/link-external";
+import Experience from "@/components/pages/about/experience";
 import Skills from "@/components/pages/about/skills";
 
 const AboutPage = () => {
@@ -55,6 +56,7 @@ const AboutPage = () => {
                 {t("fifthExtra")}
             </p>
             <Skills />
+            <Experience />
         </>
     );
 };

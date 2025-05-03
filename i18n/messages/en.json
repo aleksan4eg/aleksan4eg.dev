@@ -54,6 +54,15 @@
         "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen.",
         "Skills": {
             "title": "Skills"
+        },
+        "Experience": {
+            "title": "Experience",
+            "position1": "Web Content Editor",
+            "date1": "Oct 2018 – May 2020",
+            "description1": "Managed and edited content, ensuring accuracy and consistency for big clients like Microsoft and Ford.",
+            "position2": "Research & Development Engineer",
+            "date2": "June 2020 – Present",
+            "description2": "Working on several projects, primarily on the Turris project, which focuses on network security and privacy."
         }
     },
     "BlogPage": {
