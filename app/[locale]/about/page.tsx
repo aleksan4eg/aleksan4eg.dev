@@ -12,6 +12,12 @@ import Link from "@/components/atoms/link";
 import ExternalLink from "@/components/atoms/link-external";
 import Experience from "@/components/pages/about/experience";
 import Skills from "@/components/pages/about/skills";
+import { generatePageMetadata, MetadataProps } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: MetadataProps) {
+    const { locale } = await params;
+    return generatePageMetadata(locale, "AboutPage");
+}
 
 const AboutPage = () => {
     const t = useTranslations("AboutPage");

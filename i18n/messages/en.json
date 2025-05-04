@@ -35,6 +35,9 @@
     },
     "AboutPage": {
         "title": "About me",
+        "metaTitle": "About — Aleksandr Gumroian | aleksa4eg.dev",
+        "metaDescription": "Aleksandr Gumroian is a creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿. He is passionate about building user-friendly, accessible, and performant web applications.",
+        "metaKeywords": "Aleksandr Gumroian, Frontend Software Engineer, Czechia, web applications, user-friendly, accessible, performant",
         "first": "Hi, I’m Aleksandr Gumroian — a software engineer with a passion for building user-friendly, accessible, and performant web applications.",
         "second": "My main focus is frontend development, particularly with React.\n                I have a strong foundation in JavaScript, TypeScript, and CSS,\n                and I’m always eager to learn new technologies and frameworks.\n                Outside of work, I contribute to open-source projects, share\n                thoughts through my ",
         "secondLink": "blog",
@@ -100,5 +103,10 @@
         "light": "Light",
         "dark": "Dark",
         "system": "System"
+    },
+    "RootLayout": {
+        "metaTitle": "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian is a creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿. He is passionate about building user-friendly, accessible, and performant web applications.",
+        "metaKeywords": "A. Gumroian, Frontend Software Engineer, Czechia, web applications, user-friendly, accessible, performant"
     }
 }

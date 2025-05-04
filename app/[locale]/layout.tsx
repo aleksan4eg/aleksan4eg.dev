@@ -5,7 +5,6 @@
  * See /LICENSE for more information.
  */
 
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -16,14 +15,14 @@ import Wrapper from "@/components/molecules/wrapper";
 import ThemeProvider from "@/components/providers/theme-provider";
 import TooltipProvider from "@/components/providers/tooltip-provider";
 import { routing } from "@/i18n/routing";
+import { generatePageMetadata, MetadataProps } from "@/lib/metadata";
 
 import "@/styles/globals.css";
 
-export const metadata: Metadata = {
-    title: "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
-    description:
-        "A. Gumroian is a software engineer with a focus on web development, user interfaces, and user experience design.",
-};
+export async function generateMetadata({ params }: MetadataProps) {
+    const { locale } = await params;
+    return generatePageMetadata(locale, "RootLayout");
+}
 
 const inter = Inter({
     subsets: ["latin", "cyrillic"],
