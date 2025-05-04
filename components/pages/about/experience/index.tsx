@@ -22,7 +22,7 @@ const Experience = () => {
 
     const experience: Experience[] = [
         {
-            company: "CZ.NIC z.s.p.o.",
+            company: "CZ.NIC",
             website: "https://www.nic.cz",
             logo: "/cz_nic-logo.png",
             position: t("position2"),
