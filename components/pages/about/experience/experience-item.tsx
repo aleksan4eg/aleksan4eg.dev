@@ -27,7 +27,7 @@ export const ExpItem = ({
     return (
         <>
             <div className="absolute -start-1.5 mt-3.5 h-3 w-3 rounded-full border border-gray-100 bg-gray-400 dark:border-gray-900 dark:bg-gray-700" />
-            <div className="relative rounded-lg p-2 px-3 hover:bg-gray-200/30 dark:hover:bg-gray-800/40">
+            <div className="relative rounded-lg p-2 px-3 hover:cursor-pointer hover:bg-gray-200/40 dark:hover:bg-gray-800/40">
                 <time className="mb-1 text-sm leading-none font-normal text-gray-500 dark:text-gray-400">
                     {date}
                 </time>
