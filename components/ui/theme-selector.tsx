@@ -33,6 +33,12 @@ function ThemeIcon({ theme }: { theme: string }) {
     return icons[theme] || icons.light;
 }
 
+const themeOptions = [
+    { value: "light", labelKey: "light" },
+    { value: "dark", labelKey: "dark" },
+    { value: "system", labelKey: "system" },
+];
+
 export function ThemeSelector() {
     const t = useTranslations("ThemeSelector");
     const [isClient, setIsClient] = useState(false);
@@ -57,24 +63,18 @@ export function ThemeSelector() {
             <DropdownMenuContent align="end">
                 <DropdownMenuLabel>{t("label")}</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuCheckboxItem
-                    checked={theme === "light"}
-                    onClick={() => setTheme("light")}
-                >
-                    {t("light")}
-                </DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem
-                    checked={theme === "dark"}
-                    onClick={() => setTheme("dark")}
-                >
-                    {t("dark")}
-                </DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem
-                    checked={theme === "system"}
-                    onClick={() => setTheme("system")}
-                >
-                    {t("system")}
-                </DropdownMenuCheckboxItem>
+                {themeOptions.map(({ value, labelKey }) => (
+                    <DropdownMenuCheckboxItem
+                        key={value}
+                        checked={theme === value}
+                        onClick={() => setTheme(value)}
+                    >
+                        {t(labelKey)}
+                        <span className="ml-auto">
+                            <ThemeIcon theme={value} />
+                        </span>
+                    </DropdownMenuCheckboxItem>
+                ))}
             </DropdownMenuContent>
         </DropdownMenu>
     );
