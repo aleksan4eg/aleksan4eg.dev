@@ -54,7 +54,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center gap-5 sm:flex-row">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
                 <Button asChild className="w-full shadow-sm sm:w-auto">
                     <Link href="/about">
                         {t("cta")}
@@ -66,7 +66,7 @@ const Intro = () => {
                     className="hidden sm:block"
                     style={{ height: "30px" }}
                 />
-                <SocialLinks />
+                <SocialLinks className="gap-none justify-between sm:gap-3" />
             </div>
         </section>
     );

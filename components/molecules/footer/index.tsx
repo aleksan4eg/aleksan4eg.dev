@@ -41,7 +41,7 @@ const Footer = () => {
                     <p className="font-bold">{tCommon("name")}</p>
                 </div>
                 <p className="mb-2 text-sm">{tCommon("about")}</p>
-                <SocialLinks />
+                <SocialLinks className="gap-3" />
             </div>
             {/* Navigation Section */}
             <div className="flex flex-col gap-3 sm:row-span-2">

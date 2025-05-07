@@ -13,10 +13,10 @@ import Icon from "@/components/atoms/icon";
 import { skills } from "./data";
 
 const Skills = () => {
-    const t = useTranslations("AboutPage");
+    const t = useTranslations("AboutPage.Skills");
     return (
         <section className="mb-10" id="skills">
-            <h2 className="mb-5 text-xl font-bold">{t("Skills.title")}</h2>
+            <h2 className="mb-5 text-xl font-bold">{t("title")}</h2>
             <ul className="flex flex-wrap items-center gap-2.5">
                 {skills
                     .filter((skill) => !skill.hidden)

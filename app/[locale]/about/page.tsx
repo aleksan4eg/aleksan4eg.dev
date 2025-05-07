@@ -5,58 +5,24 @@
  * See /LICENSE for more information.
  */
 
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-
-import Link from "@/components/atoms/link";
-import ExternalLink from "@/components/atoms/link-external";
+import Activities from "@/components/pages/about/activities";
 import Experience from "@/components/pages/about/experience";
+import Intro from "@/components/pages/about/intro";
 import Skills from "@/components/pages/about/skills";
+import { generatePageMetadata, MetadataProps } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: MetadataProps) {
+    const { locale } = await params;
+    return generatePageMetadata(locale, "AboutPage");
+}
 
 const AboutPage = () => {
-    const t = useTranslations("AboutPage");
     return (
         <>
-            <h1 className="mb-5 text-2xl font-bold">{t("title")}</h1>
-            <p className="mb-4">{t("first")}</p>
-            <p className="mb-6">
-                {t("second")}
-                <Link href="/blog">{t("secondLink")}</Link>
-                {t("secondExtra")}
-            </p>
-            <figure className="mb-6">
-                <Image
-                    src="/me-prague.jpg"
-                    alt={t("imageAlt")}
-                    width={1000}
-                    height={437}
-                    className="w-full rounded-2xl shadow-lg dark:shadow-black/30"
-                />
-                <figcaption className="mt-3 text-center text-sm text-gray-500 dark:text-gray-400">
-                    {t("imageCaption")}
-                </figcaption>
-            </figure>
-            <p className="mb-4">{t("third")}</p>
-            <p className="mb-4">
-                {t("fourth")}
-                <Link href="/contact">{t("fourthLink")}</Link>
-                {t("fourthExtra")}
-                <ExternalLink href="https://github.com/aleksan4eg">
-                    {t("github")}
-                </ExternalLink>
-                {t("fourthExtra2")}
-                <ExternalLink href="https://www.linkedin.com/in/agumroian/">
-                    {t("linkedin")}
-                </ExternalLink>
-                {t("fourthExtra3")}
-            </p>
-            <p className="mb-10">
-                {t("fifth")}
-                <Link href="/uses">{t("fifthLink")}</Link>
-                {t("fifthExtra")}
-            </p>
+            <Intro />
             <Skills />
             <Experience />
+            <Activities />
         </>
     );
 };
