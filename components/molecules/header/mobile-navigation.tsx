@@ -67,7 +67,7 @@ const MobileNavigation = ({ links }: { links: NavLinkType[] }) => {
                         ))}
                     </nav>
                     <DrawerFooter>
-                        <SocialLinks className="justify-center" />
+                        <SocialLinks className="justify-around" />
                     </DrawerFooter>
                 </div>
             </DrawerContent>
