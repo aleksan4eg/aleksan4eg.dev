@@ -66,6 +66,18 @@
             "position2": "Research & Development Engineer",
             "date2": "June 2020 – Present",
             "description2": "Working on several projects, primarily on the Turris project, which focuses on network security and privacy."
+        },
+        "Activities": {
+            "title": "Leisure",
+            "Book": {
+                "progress": "{progress, number} of {capacity, number} pages",
+                "pagesLeft": "{pagesLeft, plural, =0 {no pages left} =1 {1 page left} other {# pages left}}",
+                "finished": "Finished",
+                "reading": "Reading",
+                "notStarted": "Not started",
+                "others": "and others",
+                "by": "by"
+            }
         }
     },
     "BlogPage": {

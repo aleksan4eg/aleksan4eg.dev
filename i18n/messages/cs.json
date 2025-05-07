@@ -66,6 +66,18 @@
             "position2": "Programator pro výzkum a vývoj",
             "date2": "Červen 2020 – Současnost",
             "description2": "Pracuji na několika projektech, především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
+        },
+        "Activities": {
+            "title": "Volná Chvíle",
+            "Book": {
+                "progress": "{progress, number} z {capacity, number} stránek",
+                "pagesLeft": "{pagesLeft, plural, =0 {žádné stránky} =1 {1 stránka zbývá} other {# stránek zbývá}}",
+                "finished": "Dokončeno",
+                "reading": "Čtu",
+                "notStarted": "Nezačal jsem",
+                "others": "a další",
+                "by": "od"
+            }
         }
     },
     "BlogPage": {
