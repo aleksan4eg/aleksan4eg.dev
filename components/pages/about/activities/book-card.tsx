@@ -60,7 +60,7 @@ const BookCard = async () => {
                     width={150}
                     height={150}
                 />
-                <div className="flex grow flex-col justify-between gap-1 overflow-hidden">
+                <div className="flex grow flex-col justify-center gap-1 overflow-hidden">
                     <div>
                         <p className="text-md w-full truncate font-semibold">
                             <a
@@ -75,26 +75,29 @@ const BookCard = async () => {
                         </p>
                         <p className="truncate text-sm">{formattedAuthors}</p>
                     </div>
-                    <div>
-                        {book.progress && book.progress > 0 ? (
-                            <p className="text-xs text-gray-500 dark:text-gray-300/60">
-                                {t("pagesLeft", {
-                                    pagesLeft: book.capacity
-                                        ? book.capacity - (book.progress || 0)
-                                        : 0,
-                                })}
-                            </p>
-                        ) : (
-                            <Badge size="small">{state}</Badge>
-                        )}
-                    </div>
-                    <div className="flex items-center gap-2 text-xs">
-                        <Progress
-                            value={currentReadProgress}
-                            className="cursor-pointer"
-                        />
-                        {`${currentReadProgress.toFixed(2)}%`}
-                    </div>
+                    {book.isFinished ? (
+                        <Badge size="small">{state}</Badge>
+                    ) : (
+                        <>
+                            <div>
+                                {book.progress && book.progress > 0 && (
+                                    <p className="h-3 text-xs text-gray-500 dark:text-gray-300/60">
+                                        {t("progress", {
+                                            progress: book.progress,
+                                            capacity: book.capacity || 1,
+                                        })}
+                                    </p>
+                                )}
+                            </div>
+                            <div className="flex items-center gap-2 text-xs">
+                                <Progress
+                                    value={currentReadProgress}
+                                    className="cursor-pointer"
+                                />
+                                {`${currentReadProgress.toFixed(2)}%`}
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
         </div>

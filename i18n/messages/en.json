@@ -70,7 +70,7 @@
         "Activities": {
             "title": "Leisure",
             "Book": {
-                "progress": "{progress, number} of {capacity, number} pages",
+                "progress": "Page {progress, number} of {capacity, number} pages",
                 "pagesLeft": "{pagesLeft, plural, =0 {no pages left} =1 {1 page left} other {# pages left}}",
                 "finished": "Finished",
                 "reading": "Reading",

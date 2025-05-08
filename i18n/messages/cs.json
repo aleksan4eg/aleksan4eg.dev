@@ -70,8 +70,8 @@
         "Activities": {
             "title": "Volná Chvíle",
             "Book": {
-                "progress": "{progress, number} z {capacity, number} stránek",
-                "pagesLeft": "{pagesLeft, plural, =0 {žádné stránky} =1 {1 stránka zbývá} other {# stránek zbývá}}",
+                "progress": "Stránka {progress, number} z {capacity, number} stránek",
+                "pagesLeft": "{pagesLeft, plural, one {zbývá # stránka} few {zbývají # stránky} many {zbývá # stránek } other {zbývá # stránek}}",
                 "finished": "Dokončeno",
                 "reading": "Čtu",
                 "notStarted": "Nezačal jsem",
