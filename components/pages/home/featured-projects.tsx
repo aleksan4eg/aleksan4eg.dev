@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const FeaturedProjects = () => {
     const t = useTranslations("HomePage.FeaturedProjects");
     return (
-        <section className="flex flex-col gap-6">
+        <section className="mb-10 flex flex-col gap-6" id="featured-projects">
             <h2 className="flex items-center justify-between text-xl font-bold">
                 {t("title")}
                 <Button

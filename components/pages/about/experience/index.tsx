@@ -40,12 +40,12 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience">
+        <section id="experience" className="mb-10">
             <h2 className="mb-5 text-xl font-bold">{t("title")}</h2>
             <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 {experience.map((exp) => {
                     return (
-                        <li className="ms-4 mb-10" key={exp.company}>
+                        <li className="ms-4 first:mb-6" key={exp.company}>
                             <ExpItem {...exp} />
                         </li>
                     );
