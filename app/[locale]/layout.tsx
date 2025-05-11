@@ -56,6 +56,7 @@ export default async function RootLayout({
                         defaultTheme="system"
                         enableSystem
                         enableColorScheme
+                        disableTransitionOnChange
                     >
                         <TooltipProvider>
                             <Header />
