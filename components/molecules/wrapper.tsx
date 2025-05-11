@@ -5,7 +5,7 @@ const Wrapper = ({
 }>) => {
     return (
         <main
-            className="mx-auto mb-10 flex grow flex-col px-3 pt-20 pb-2 md:max-w-[800px] md:pt-24"
+            className="mx-auto flex grow flex-col px-3 pt-20 pb-2 md:max-w-[800px] md:pt-24"
             role="main"
         >
             {children}

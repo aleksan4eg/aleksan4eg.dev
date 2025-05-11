@@ -66,7 +66,7 @@ const Intro = () => {
                     className="hidden sm:block"
                     style={{ height: "30px" }}
                 />
-                <SocialLinks className="gap-none justify-between sm:gap-3" />
+                <SocialLinks className="gap-none justify-around sm:gap-3" />
             </div>
         </section>
     );
