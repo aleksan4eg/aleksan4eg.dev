@@ -76,7 +76,7 @@ const BookCard = async () => {
                         <p className="truncate text-sm">{formattedAuthors}</p>
                     </div>
                     {book.isFinished ? (
-                        <Badge size="small">{state}</Badge>
+                        <Badge size="sm">{state}</Badge>
                     ) : (
                         <>
                             <div>

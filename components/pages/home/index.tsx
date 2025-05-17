@@ -29,7 +29,7 @@ const Intro = () => {
                     alt={t("altImage")}
                     width={180}
                     height={180}
-                    className="w-40 self-center rounded-full inset-shadow-[0_0_50px_rgba(0,0,0,0.9)] md:w-45 md:self-start dark:inset-shadow-[0_0_50px_rgba(0,0,0,0.9)]"
+                    className="w-40 self-center rounded-full inset-shadow-[0_0_50px_rgba(0,0,0,0.9)] md:w-45 md:self-start dark:inset-shadow-[0_0_50px_rgba(0,0,0,0.9)] dark:brightness-90"
                     priority
                 />
                 <div className="text-center sm:text-left">

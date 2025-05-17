@@ -1,16 +1,28 @@
-import React from "react";
+/*
+ * © 2025 Aleksandr Gumroian (https://aleksan4eg.dev)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+import { cn } from "@/lib/utils";
 
 type BadgeProps = {
     children: React.ReactNode;
-    size?: "small" | "medium" | "large";
+    className?: string;
+    size?: "sm" | "md" | "lg";
     color?: "blue" | "green" | "red" | "yellow";
 };
 
-const Badge = ({ children, size = "medium", color = "blue" }: BadgeProps) => {
+const Badge = ({
+    children,
+    className,
+    size = "md",
+    color = "blue",
+}: BadgeProps) => {
     const sizeClasses = {
-        small: "px-1.5 py-0.5 text-xs",
-        medium: "px-2.5 py-0.5 text-sm",
-        large: "px-3.5 py-1 text-base",
+        sm: "px-1.5 py-0.5 text-xs",
+        md: "px-2.5 py-0.5 text-sm",
+        lg: "px-3.5 py-1 text-base",
     };
 
     const colorClasses = {
@@ -22,9 +34,12 @@ const Badge = ({ children, size = "medium", color = "blue" }: BadgeProps) => {
 
     return (
         <span
-            className={`me-2 rounded-sm font-medium ${
-                sizeClasses[size]
-            } ${colorClasses[color]}`}
+            className={cn(
+                `me-2 rounded-sm font-medium ${
+                    sizeClasses[size]
+                } ${colorClasses[color]}`,
+                className,
+            )}
         >
             {children}
         </span>

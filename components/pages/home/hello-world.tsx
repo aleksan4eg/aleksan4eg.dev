@@ -32,7 +32,7 @@ export const DynamicGreeting = () => {
     return (
         <span className="inline-flex items-center gap-2">
             <span>{currentGreeting.greeting}</span>
-            <Badge size="small">{currentGreeting.language}</Badge>
+            <Badge size="sm">{currentGreeting.language}</Badge>
         </span>
     );
 };
