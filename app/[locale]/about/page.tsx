@@ -8,7 +8,7 @@
 import Activities from "@/components/pages/about/activities";
 import Experience from "@/components/pages/about/experience";
 import Intro from "@/components/pages/about/intro";
-import Skills from "@/components/pages/about/skills";
+import Skills from "@/components/pages/about/skills/Skills";
 import { generatePageMetadata, MetadataProps } from "@/lib/metadata";
 
 export async function generateMetadata({ params }: MetadataProps) {

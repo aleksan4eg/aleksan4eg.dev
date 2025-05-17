@@ -5,11 +5,14 @@
  * See /LICENSE for more information.
  */
 
+import { Link } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import React, { CSSProperties } from "react";
 
+import Badge from "@/components/atoms/badge";
 import Icon from "@/components/atoms/icon";
-import skillsData from "@/components/pages/about/skills/data.json";
+import skillsData from "@/components/pages/about/skills/skills.json";
+import Stars from "@/components/pages/about/skills/SkillStars";
 import { Button } from "@/components/ui/button";
 import {
     Popover,
@@ -25,6 +28,8 @@ interface Skill {
     color: string;
     website: string;
     hidden?: boolean;
+    knowledge: number;
+    categories: string[];
 }
 
 const Skills = async () => {
@@ -61,19 +66,44 @@ const Skills = async () => {
                                     </Button>
                                 </PopoverTrigger>
                                 <PopoverContent side="top">
-                                    <div className="flex items-center gap-2">
-                                        <Icon
-                                            path={skill.icon}
-                                            className="size-5"
-                                        />
-                                        <h3 className="text-md font-semibold">
-                                            {skill.name}
-                                        </h3>
+                                    <div className="flex justify-between gap-2">
+                                        <div className="flex items-center gap-2">
+                                            <Icon
+                                                path={skill.icon}
+                                                className="size-5"
+                                            />
+                                            <h3 className="text-md truncate font-semibold">
+                                                {skill.name}
+                                            </h3>
+                                            <a
+                                                href={skill.website}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-foreground/70 hover:text-foreground/100"
+                                            >
+                                                <Link className="size-3.5" />
+                                            </a>
+                                        </div>
+                                        <Stars knowledge={skill.knowledge} />
                                     </div>
-                                    <Separator className="my-1.5" />
-                                    <p className="text-foreground text-sm">
+                                    <Separator className="my-2" />
+                                    <p className="text-foreground mb-3 text-sm">
                                         {skill.description}
                                     </p>
+                                    {skill.categories && (
+                                        <div className="flex items-center">
+                                            {skill.categories.map((cat) => (
+                                                <Badge
+                                                    key={cat}
+                                                    color="blue"
+                                                    size="sm"
+                                                    className="text-[0.68rem]"
+                                                >
+                                                    {t(`Categories.${cat}`)}
+                                                </Badge>
+                                            ))}
+                                        </div>
+                                    )}
                                 </PopoverContent>
                             </Popover>
                         </li>

@@ -78,7 +78,30 @@
             "rest": "Architektonický styl pro webové služby, který používá HTTP požadavky pro přístup a manipulaci s daty.",
             "motion": "JavaScriptová knihovna pro vytváření animací a přechodů ve webových aplikacích.",
             "eslint": "Nástroj pro statickou analýzu kódu pro identifikaci a opravu problémů v JavaScript/TypeScript kódu.",
-            "prettier": "Nástroj pro formátování kódu, který zajišťuje konzistentní styl a čitelnost napříč projekty."
+            "prettier": "Nástroj pro formátování kódu, který zajišťuje konzistentní styl a čitelnost napříč projekty.",
+            "Categories": {
+                "webdev": "WebDev",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "fullstack": "FullStack",
+                "devops": "DevOps",
+                "styles": "Styly",
+                "langs": "Jazyky",
+                "libs": "FW&Libs",
+                "state": "Kontrola stavu",
+                "design": "Návrhové nástroje",
+                "uxui": "UX/UI",
+                "testing": "Testování",
+                "runtime": "Runtime",
+                "databases": "Databáze",
+                "nosql": "NoSQL",
+                "sql": "SQL",
+                "tools": "Build Tools",
+                "version": "Systém správy verzí",
+                "api": "API technologie",
+                "animation": "Animace",
+                "quality": "Kvalita kódu"
+            }
         },
         "Experience": {
             "title": "Zkušenosti",
@@ -87,7 +110,7 @@
             "description1": "Spravoval a upravoval obsah, zajišťoval přesnost a konzistenci pro velké klienty jako Microsoft a Ford.",
             "position2": "Programator pro výzkum a vývoj",
             "date2": "Červen 2020 – Současnost",
-            "description2": "Pracuji na několika projektech, především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
+            "description2": "Pracuji především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
         },
         "Activities": {
             "title": "Volná Chvíle",
