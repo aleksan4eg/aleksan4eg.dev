@@ -4,6 +4,8 @@
 declare const messages: {
     "common": {
         "altLogo": "Logo of aleksan4eg.dev",
+        "name": "Aleksandr Gumroian",
+        "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
         "navigation": {
             "title": "Navigation",
             "home": "Home",
@@ -16,9 +18,8 @@ declare const messages: {
     },
     "HomePage": {
         "Intro": {
+            "greeting": "👋🏻",
             "me": "I am",
-            "name": "Aleksandr Gumroian",
-            "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
             "description": "Driven by precision, I aim to build visually appealing and user-friendly applications while continuously improving my skills.",
             "cta": "About me",
             "ctaAriaLabel": "Learn more about Aleksandr Gumroian",
@@ -35,10 +36,68 @@ declare const messages: {
             "noProjects": "No projects found."
         }
     },
+    "AboutPage": {
+        "title": "About me",
+        "metaTitle": "About — Aleksandr Gumroian | aleksa4eg.dev",
+        "metaDescription": "Aleksandr Gumroian is a creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿. He is passionate about building user-friendly, accessible, and performant web applications.",
+        "metaKeywords": "Aleksandr Gumroian, Frontend Software Engineer, Czechia, web applications, user-friendly, accessible, performant",
+        "first": "Hi, I’m Aleksandr Gumroian — a software engineer with a passion for building user-friendly, accessible, and performant web applications.",
+        "second": "My main focus is frontend development, particularly with React.\n                I have a strong foundation in JavaScript, TypeScript, and CSS,\n                and I’m always eager to learn new technologies and frameworks.\n                Outside of work, I contribute to open-source projects, share\n                thoughts through my ",
+        "secondLink": "blog",
+        "secondExtra": ", and\n                experiment with ideas that spark my curiosity.",
+        "imageAlt": "Aleksandr Gumroian standing in sunglasses, the background is out of focus with a cityscape, a river and bridges.",
+        "imageCaption": "View on Prague from Metronome (Stalin), Czechia - Aug. '21",
+        "third": "When I’m not coding, you’ll likely find me outdoors — fishing, playing volleyball or ping-pong, walking my dog, tinkering a new DIY project or just exploring new places and spending time with friends.",
+        "fourth": "If you'd like to connect, collaborate, or just say hello, feel free to ",
+        "fourthLink": "reach out",
+        "fourthExtra": " or find me and connect on ",
+        "github": "GitHub",
+        "fourthExtra2": " and ",
+        "linkedin": "LinkedIn",
+        "fourthExtra3": ". I’m always open to new opportunities and cooperations, so don’t hesitate to contact me if you think we could work together!",
+        "fifth": "Curious about the tools and setup I use? Check out my ",
+        "fifthLink": "uses",
+        "fifthExtra": " page. I also keep a regularly updated playlist of what I’m listening to — feel free to give it a listen.",
+        "Skills": {
+            "title": "Skills"
+        },
+        "Experience": {
+            "title": "Experience",
+            "position1": "Web Content Editor",
+            "date1": "Oct 2018 – May 2020",
+            "description1": "Managed and edited content, ensuring accuracy and consistency for big clients like Microsoft and Ford.",
+            "position2": "Research & Development Engineer",
+            "date2": "June 2020 – Present",
+            "description2": "Working on several projects, primarily on the Turris project, which focuses on network security and privacy."
+        },
+        "Activities": {
+            "title": "Leisure",
+            "Book": {
+                "progress": "Page {progress, number} of {capacity, number} pages",
+                "pagesLeft": "{pagesLeft, plural, =0 {no pages left} =1 {1 page left} other {# pages left}}",
+                "finished": "Finished",
+                "reading": "Reading",
+                "notStarted": "Not started",
+                "others": "and others",
+                "by": "by"
+            }
+        }
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projects"
+    },
+    "UsesPage": {
+        "title": "Uses"
+    },
+    "ContactPage": {
+        "title": "Contact"
+    },
     "Footer": {
-        "name": "Aleksandr Gumroian",
-        "about": "Creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿",
-        "rights": "CC BY-SA 4.0.",
+        "copy": "© ",
+        "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Other",
             "github": "GitHub",
@@ -59,6 +118,11 @@ declare const messages: {
         "light": "Light",
         "dark": "Dark",
         "system": "System"
+    },
+    "RootLayout": {
+        "metaTitle": "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian is a creative and enthusiastic Frontend Software Engineer based in Czechia 🇨🇿. He is passionate about building user-friendly, accessible, and performant web applications.",
+        "metaKeywords": "A. Gumroian, Frontend Software Engineer, Czechia, web applications, user-friendly, accessible, performant"
     }
 };
 export default messages;

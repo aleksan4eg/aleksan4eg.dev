@@ -4,21 +4,22 @@
 declare const messages: {
     "common": {
         "altLogo": "Logo aleksan4eg.dev",
+        "name": "Aleksandr Gumroian",
+        "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
         "navigation": {
             "title": "Navigace",
             "home": "Domů",
             "about": "O mně",
             "blog": "Blog",
             "projects": "Projekty",
-            "contact": "Kontakt",
-            "uses": "Co používám"
+            "uses": "Nástroje",
+            "contact": "Kontakt"
         }
     },
     "HomePage": {
         "Intro": {
             "me": "Ja jsem",
-            "name": "Aleksandr Gumroian",
-            "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
+            "greeting": "👋🏻",
             "description": "Dbám na přesnost a usiluji o tvorbu vizuálně atraktivních a uživatelsky přívětivých aplikací, přičemž neustále zdokonaluji své dovednosti.",
             "cta": "O mně",
             "ctaAriaLabel": "Zjistit více o Aleksandru Gumrojanovi",
@@ -35,10 +36,68 @@ declare const messages: {
             "noProjects": "Nebyly nalezeny žádné projekty."
         }
     },
+    "AboutPage": {
+        "title": "O mně",
+        "metaTitle": "O mně — Aleksandr Gumroian | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian je kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿. Má zájem o vytváření uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "metaKeywords": "Aleksandr Gumroian, Frontend Software Engineer, Česko, webové aplikace, uživatelsky přívětivé, přístupné, výkonné",
+        "first": "Ahoj! Jmenuji se Aleksandr Gumroian a jsem softwarový inženýr se zájmem o tvorbu uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "second": "Mým hlavním zaměřením je frontendový vývoj se specializací na React. Dobře ovládám JavaScript, TypeScript a CSS a jsem vždy otevřený učení se novým technologiím a nástrojům. Ve volném čase přispívám do open-source projektů, sdílím své myšlenky na ",
+        "secondLink": "blogu",
+        "secondExtra": " a experimentuji s nápady, které mě inspirují.",
+        "imageAlt": "Aleksandr Gumroian stojící v brýlích, pozadí je rozmazané s městskou krajinou, řekou a mosty.",
+        "imageCaption": "Pohled na Prahu z Metronomu (Stalin), Česko - Srpen '21",
+        "third": "Když zrovna nepracuji, trávím rád čas venku — chodím na ryby, hraji volejbal nebo stolní tenis, venčím psa, kutím nové DIY projekty nebo jen tak objevují nová místa a trávím čas s přáteli.",
+        "fourth": "Pokud se chcete ",
+        "fourthLink": "spojit",
+        "fourthExtra": " probrat možnou spolupráci nebo se jen seznámit, budu rád za vaši zprávu. Najdete mě na ",
+        "github": "GitHubu",
+        "fourthExtra2": " a  ",
+        "linkedin": "LinkedInu",
+        "fourthExtra3": " — jsem otevřený novým příležitostem a projektům.",
+        "fifth": "Zajímá vás, jaké nástroje a technologie používám? Podívejte se na moji stránku ",
+        "fifthLink": "Nástroje",
+        "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!",
+        "Skills": {
+            "title": "Dovednosti"
+        },
+        "Experience": {
+            "title": "Zkušenosti",
+            "position1": "Editor webového obsahu",
+            "date1": "Říjen 2018 – Květen 2020",
+            "description1": "Spravoval a upravoval obsah, zajišťoval přesnost a konzistenci pro velké klienty jako Microsoft a Ford.",
+            "position2": "Programator pro výzkum a vývoj",
+            "date2": "Červen 2020 – Současnost",
+            "description2": "Pracuji na několika projektech, především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
+        },
+        "Activities": {
+            "title": "Volná Chvíle",
+            "Book": {
+                "progress": "Stránka {progress, number} z {capacity, number} stránek",
+                "pagesLeft": "{pagesLeft, plural, one {zbývá # stránka} few {zbývají # stránky} many {zbývá # stránek } other {zbývá # stránek}}",
+                "finished": "Dokončeno",
+                "reading": "Čtu",
+                "notStarted": "Nezačal jsem",
+                "others": "a další",
+                "by": "od"
+            }
+        }
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projekty"
+    },
+    "UsesPage": {
+        "title": "Nástroje"
+    },
+    "ContactPage": {
+        "title": "Kontakt"
+    },
     "Footer": {
-        "name": "Aleksandr Gumroian",
-        "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
-        "rights": "CC BY-SA 4.0.",
+        "copy": "© ",
+        "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Ostatní",
             "github": "GitHub",
@@ -54,11 +113,16 @@ declare const messages: {
         "ariaLabel": "Změnit jazyk"
     },
     "ThemeSelector": {
-        "label": "Téma",
-        "ariaLabel": "Změnit téma",
-        "light": "Světlé",
-        "dark": "Tmavé",
-        "system": "Systémové"
+        "label": "Motiv vzhledu",
+        "ariaLabel": "Změnit motiv vzhledu",
+        "light": "Světlý",
+        "dark": "Tmavý",
+        "system": "Systémový"
+    },
+    "RootLayout": {
+        "metaTitle": "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian je kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿. Má zájem o vytváření uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "metaKeywords": "A. Gumroian, Frontend Software Engineer, Česko, webové aplikace, uživatelsky přívětivé, přístupné, výkonné"
     }
 };
 export default messages;
