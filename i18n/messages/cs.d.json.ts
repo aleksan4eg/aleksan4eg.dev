@@ -4,21 +4,22 @@
 declare const messages: {
     "common": {
         "altLogo": "Logo aleksan4eg.dev",
+        "name": "Aleksandr Gumroian",
+        "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
         "navigation": {
             "title": "Navigace",
             "home": "Domů",
             "about": "O mně",
             "blog": "Blog",
             "projects": "Projekty",
-            "contact": "Kontakt",
-            "uses": "Co používám"
+            "uses": "Nástroje",
+            "contact": "Kontakt"
         }
     },
     "HomePage": {
         "Intro": {
             "me": "Ja jsem",
-            "name": "Aleksandr Gumroian",
-            "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
+            "greeting": "👋🏻",
             "description": "Dbám na přesnost a usiluji o tvorbu vizuálně atraktivních a uživatelsky přívětivých aplikací, přičemž neustále zdokonaluji své dovednosti.",
             "cta": "O mně",
             "ctaAriaLabel": "Zjistit více o Aleksandru Gumrojanovi",
@@ -35,10 +36,113 @@ declare const messages: {
             "noProjects": "Nebyly nalezeny žádné projekty."
         }
     },
+    "AboutPage": {
+        "title": "O mně",
+        "metaTitle": "O mně — Aleksandr Gumroian | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian je kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿. Má zájem o vytváření uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "metaKeywords": "Aleksandr Gumroian, Frontend Software Engineer, Česko, webové aplikace, uživatelsky přívětivé, přístupné, výkonné",
+        "first": "Ahoj! Jmenuji se Aleksandr Gumroian a jsem softwarový inženýr se zájmem o tvorbu uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "second": "Mým hlavním zaměřením je frontendový vývoj se specializací na React. Dobře ovládám JavaScript, TypeScript a CSS a jsem vždy otevřený učení se novým technologiím a nástrojům. Ve volném čase přispívám do open-source projektů, sdílím své myšlenky na ",
+        "secondLink": "blogu",
+        "secondExtra": " a experimentuji s nápady, které mě inspirují.",
+        "imageAlt": "Aleksandr Gumroian stojící v brýlích, pozadí je rozmazané s městskou krajinou, řekou a mosty.",
+        "imageCaption": "Pohled na Prahu z Metronomu (Stalin), Česko - Srpen '21",
+        "third": "Když zrovna nepracuji, trávím rád čas venku — chodím na ryby, hraji volejbal nebo stolní tenis, venčím psa, kutím nové DIY projekty nebo jen tak objevují nová místa a trávím čas s přáteli.",
+        "fourth": "Pokud se chcete ",
+        "fourthLink": "spojit",
+        "fourthExtra": " probrat možnou spolupráci nebo se jen seznámit, budu rád za vaši zprávu. Najdete mě na ",
+        "github": "GitHubu",
+        "fourthExtra2": " a  ",
+        "linkedin": "LinkedInu",
+        "fourthExtra3": " — jsem otevřený novým příležitostem a projektům.",
+        "fifth": "Zajímá vás, jaké nástroje a technologie používám? Podívejte se na moji stránku ",
+        "fifthLink": "Nástroje",
+        "fifthExtra": ". Mám také playlist s hudbou, který pravidelně aktualizuji — budu rád, když si ho poslechnete!",
+        "Skills": {
+            "title": "Dovednosti",
+            "html": "Nejnovější standard HTML, představující sémantické značky a podporu multimédií pro moderní webové aplikace.",
+            "css": "Nejnovější verze CSS, zahrnující animace, flexbox, grid a nástroje pro responsivní design.",
+            "js": "Dynamický skriptovací jazyk pro webovou interaktivitu, API a vývoj na straně klienta i serveru.",
+            "ts": "Programovací jazyk postavený na JavaScriptu, poskytující statickou typizaci a vylepšené nástroje pro vývoj.",
+            "react": "JavaScriptová knihovna pro vytváření UI komponent, vyvinutá společností Meta, používající virtuální DOM pro efektivitu.",
+            "next": "React framework pro renderování na straně serveru, statické weby a full-stack webové aplikace.",
+            "vue": "Progresivní JavaScriptový framework pro vytváření UI s jednoduchou a flexibilní architekturou.",
+            "redux": "Knihovna pro správu stavu pro JavaScriptové aplikace, centralizující tok dat ve složitých aplikacích.",
+            "tailwind": "CSS framework s utilitárními třídami pro rychlý vývoj uživatelského rozhraní.",
+            "figma": "Webový nástroj pro UI/UX design pro kolaborativní návrh, prototypování a zpětnou vazbu.",
+            "jest": "JavaScriptový testovací framework zaměřený na jednoduchost, podporující unit a snapshot testování.",
+            "python": "Vysokoúrovňový programovací jazyk široce používaný ve webovém vývoji, analýze dat a strojovém učení.",
+            "node": "JavaScript runtime prostředí pro běh JS kódu mimo prohlížeč, umožňující psaní serverového kódu pro webové stránky a aplikace.",
+            "mongo": "NoSQL databáze používající flexibilní, JSON-podobné dokumenty pro vysoce výkonné ukládání dat.",
+            "postgresql": "Výkonná open-source relační databáze s pokročilými SQL funkcemi a škálovatelností.",
+            "webpack": "Nástroj pro balení modulů pro JavaScriptové aplikace, optimalizující zdroje pro produkční nasazení.",
+            "git": "Distribuovaný systém pro správu verzí pro sledování změn v kódu a zajištění spolupráce týmu.",
+            "graphql": "Dotazovací jazyk pro API, který umožňuje klientům dotazovat se pouze na potřebná data.",
+            "rest": "Architektonický styl pro webové služby, který používá HTTP požadavky pro přístup a manipulaci s daty.",
+            "motion": "JavaScriptová knihovna pro vytváření animací a přechodů ve webových aplikacích.",
+            "eslint": "Nástroj pro statickou analýzu kódu pro identifikaci a opravu problémů v JavaScript/TypeScript kódu.",
+            "prettier": "Nástroj pro formátování kódu, který zajišťuje konzistentní styl a čitelnost napříč projekty.",
+            "Categories": {
+                "webdev": "WebDev",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "fullstack": "FullStack",
+                "devops": "DevOps",
+                "styles": "Styly",
+                "langs": "Jazyky",
+                "libs": "FW&Libs",
+                "state": "Kontrola stavu",
+                "design": "Návrhové nástroje",
+                "uxui": "UX/UI",
+                "testing": "Testování",
+                "runtime": "Runtime",
+                "databases": "Databáze",
+                "nosql": "NoSQL",
+                "sql": "SQL",
+                "tools": "Build Tools",
+                "version": "Systém správy verzí",
+                "api": "API technologie",
+                "animation": "Animace",
+                "quality": "Kvalita kódu"
+            }
+        },
+        "Experience": {
+            "title": "Zkušenosti",
+            "position1": "Editor webového obsahu",
+            "date1": "Říjen 2018 – Květen 2020",
+            "description1": "Spravoval a upravoval obsah, zajišťoval přesnost a konzistenci pro velké klienty jako Microsoft a Ford.",
+            "position2": "Programator pro výzkum a vývoj",
+            "date2": "Červen 2020 – Současnost",
+            "description2": "Pracuji především na projektu Turris, který se zaměřuje na zabezpečení a ochranu soukromí v síti."
+        },
+        "Activities": {
+            "title": "Volná Chvíle",
+            "Book": {
+                "progress": "Stránka {progress, number} z {capacity, number} stránek",
+                "pagesLeft": "{pagesLeft, plural, one {zbývá # stránka} few {zbývají # stránky} many {zbývá # stránek } other {zbývá # stránek}}",
+                "finished": "Dokončeno",
+                "reading": "Čtu",
+                "notStarted": "Nezačal jsem",
+                "others": "a další",
+                "by": "od"
+            }
+        }
+    },
+    "BlogPage": {
+        "title": "Blog"
+    },
+    "ProjectsPage": {
+        "title": "Projekty"
+    },
+    "UsesPage": {
+        "title": "Nástroje"
+    },
+    "ContactPage": {
+        "title": "Kontakt"
+    },
     "Footer": {
-        "name": "Aleksandr Gumroian",
-        "about": "Kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿",
-        "rights": "CC BY-SA 4.0.",
+        "copy": "© ",
+        "rights": ". CC BY-SA 4.0.",
         "other": {
             "title": "Ostatní",
             "github": "GitHub",
@@ -54,11 +158,16 @@ declare const messages: {
         "ariaLabel": "Změnit jazyk"
     },
     "ThemeSelector": {
-        "label": "Téma",
-        "ariaLabel": "Změnit téma",
-        "light": "Světlé",
-        "dark": "Tmavé",
-        "system": "Systémové"
+        "label": "Motiv vzhledu",
+        "ariaLabel": "Změnit motiv vzhledu",
+        "light": "Světlý",
+        "dark": "Tmavý",
+        "system": "Systémový"
+    },
+    "RootLayout": {
+        "metaTitle": "Aleksandr Gumroian — Frontend Software Engineer | aleksa4eg.dev",
+        "metaDescription": "A. Gumroian je kreativní a nadšený frontendový vývojář se sídlem v Česku 🇨🇿. Má zájem o vytváření uživatelsky přívětivých, přístupných a výkonných webových aplikací.",
+        "metaKeywords": "A. Gumroian, Frontend Software Engineer, Česko, webové aplikace, uživatelsky přívětivé, přístupné, výkonné"
     }
 };
 export default messages;
